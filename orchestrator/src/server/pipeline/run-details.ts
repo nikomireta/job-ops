@@ -89,6 +89,7 @@ function buildEffectiveConfigSnapshot(args: {
       startupjobsMaxJobsPerTerm: args.settings.startupjobsMaxJobsPerTerm.value,
       jobindexMaxJobsPerTerm: args.settings.jobindexMaxJobsPerTerm.value,
       naukriMaxJobsPerTerm: args.settings.naukriMaxJobsPerTerm.value,
+      glintsMaxJobsPerTerm: args.settings.glintsMaxJobsPerTerm.value,
       jobspyResultsWanted: args.settings.jobspyResultsWanted.value,
     },
     autoSkipScoreThreshold: args.settings.autoSkipScoreThreshold.value,

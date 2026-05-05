@@ -149,6 +149,7 @@ export interface ExtractorLimits {
   jobindexMaxJobsPerTerm: number;
   seekMaxJobsPerTerm: number;
   naukriMaxJobsPerTerm: number;
+  glintsMaxJobsPerTerm: number;
 }
 
 export function inferAutomaticPresetSelection(args: {
@@ -206,6 +207,7 @@ export function deriveExtractorLimits(args: {
   const includesJobindex = args.sources.includes("jobindex");
   const includesSeek = args.sources.includes("seek");
   const includesNaukri = args.sources.includes("naukri");
+  const includesGlints = args.sources.includes("glints");
 
   const weightedContributors =
     (includesIndeed ? termCount : 0) +
@@ -219,7 +221,8 @@ export function deriveExtractorLimits(args: {
     (includesWorkingNomads ? termCount : 0) +
     (includesJobindex ? termCount : 0) +
     (includesSeek ? termCount : 0) +
-    (includesNaukri ? termCount : 0);
+    (includesNaukri ? termCount : 0) +
+    (includesGlints ? termCount : 0);
 
   if (weightedContributors <= 0) {
     return {
@@ -232,6 +235,7 @@ export function deriveExtractorLimits(args: {
       jobindexMaxJobsPerTerm: budget,
       seekMaxJobsPerTerm: budget,
       naukriMaxJobsPerTerm: budget,
+      glintsMaxJobsPerTerm: budget,
     };
   }
 
@@ -248,6 +252,7 @@ export function deriveExtractorLimits(args: {
     jobindexMaxJobsPerTerm: perUnit,
     seekMaxJobsPerTerm: perUnit,
     naukriMaxJobsPerTerm: perUnit,
+    glintsMaxJobsPerTerm: perUnit,
   };
 }
 
@@ -336,6 +341,7 @@ export function calculateAutomaticEstimate(args: {
   const hasJobindex = sources.includes("jobindex");
   const hasSeek = sources.includes("seek");
   const hasNaukri = sources.includes("naukri");
+  const hasGlints = sources.includes("glints");
   const limits = deriveExtractorLimits({
     budget: values.runBudget,
     searchTerms: values.searchTerms,
@@ -365,6 +371,7 @@ export function calculateAutomaticEstimate(args: {
     : 0;
   const seekCap = hasSeek ? limits.seekMaxJobsPerTerm * termCount : 0;
   const naukriCap = hasNaukri ? limits.naukriMaxJobsPerTerm * termCount : 0;
+  const glintsCap = hasGlints ? limits.glintsMaxJobsPerTerm * termCount : 0;
 
   const discoveredCap =
     jobspyCap +
@@ -376,7 +383,8 @@ export function calculateAutomaticEstimate(args: {
     workingNomadsCap +
     jobindexCap +
     seekCap +
-    naukriCap;
+    naukriCap +
+    glintsCap;
   const discoveredMin = Math.round(discoveredCap * 0.35);
   const discoveredMax = Math.round(discoveredCap * 0.75);
   const processedMin = Math.min(values.topN, discoveredMin);

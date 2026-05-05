@@ -291,6 +291,7 @@ export const AutomaticRunTab: React.FC<AutomaticRunTabProps> = ({
         settings?.adzunaMaxJobsPerTerm?.value ??
         settings?.gradcrackerMaxJobsPerTerm?.value ??
         settings?.naukriMaxJobsPerTerm?.value ??
+        settings?.glintsMaxJobsPerTerm?.value ??
         settings?.ukvisajobsMaxJobs?.value ??
         DEFAULT_VALUES.runBudget,
     );

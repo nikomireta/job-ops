@@ -44,6 +44,10 @@ describe("orchestrator utils", () => {
     expect(getEnabledSources(createAppSettings())).toContain("naukri");
   });
 
+  it("enables glints without credentials", () => {
+    expect(getEnabledSources(createAppSettings())).toContain("glints");
+  });
+
   it("counts processing jobs in ready and discovered tabs", () => {
     const jobs = [
       createJob({ id: "ready", status: "ready", closedAt: null }),

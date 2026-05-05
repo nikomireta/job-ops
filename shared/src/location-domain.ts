@@ -311,6 +311,8 @@ function createDefaultSupportedCountryKeys(
       return ["australia", "new zealand"];
     case "naukri":
       return ["india"];
+    case "glints":
+      return ["indonesia"];
     case "jobindex":
       return ["denmark"];
     case "glassdoor":

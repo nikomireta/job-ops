@@ -27,6 +27,17 @@ describe("extractor deployment config", () => {
     );
   });
 
+  it("ships the Glints extractor in Docker runtime images", async () => {
+    const dockerfile = await readFile(resolve(process.cwd(), "../Dockerfile"), {
+      encoding: "utf8",
+    });
+
+    expect(dockerfile).toContain(
+      "COPY extractors/glints/package*.json ./extractors/glints/",
+    );
+    expect(dockerfile).toContain("COPY extractors/glints ./extractors/glints");
+  });
+
   it("syncs the Naukri extractor in compose development mode", async () => {
     const composeFile = await readFile(
       resolve(process.cwd(), "../docker-compose.yml"),
@@ -45,5 +56,15 @@ describe("extractor deployment config", () => {
 
     expect(composeFile).toContain("path: ./extractors/jobindex/src");
     expect(composeFile).toContain("target: /app/extractors/jobindex/src");
+  });
+
+  it("syncs the Glints extractor in compose development mode", async () => {
+    const composeFile = await readFile(
+      resolve(process.cwd(), "../docker-compose.yml"),
+      { encoding: "utf8" },
+    );
+
+    expect(composeFile).toContain("path: ./extractors/glints");
+    expect(composeFile).toContain("target: /app/extractors/glints");
   });
 });

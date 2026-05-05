@@ -234,6 +234,11 @@ describe("location-domain", () => {
       source: "naukri",
       supportedCountryKeys: ["india"],
     });
+    expect(normalizeLocationSourceCapabilities({ source: "glints" })).toEqual({
+      requiresCityLocations: false,
+      source: "glints",
+      supportedCountryKeys: ["indonesia"],
+    });
     expect(
       normalizeLocationSourceCapabilities({ source: "startupjobs" }),
     ).toEqual({

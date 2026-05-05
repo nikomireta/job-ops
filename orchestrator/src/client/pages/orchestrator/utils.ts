@@ -237,6 +237,10 @@ export const getEnabledSources = (
       enabled.push(source);
       continue;
     }
+    if (source === "glints") {
+      enabled.push(source);
+      continue;
+    }
     if (source === "hiringcafe") {
       enabled.push(source);
       continue;

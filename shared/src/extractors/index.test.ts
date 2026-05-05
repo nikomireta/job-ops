@@ -33,4 +33,12 @@ describe("extractor source catalog", () => {
       category: "pipeline",
     });
   });
+
+  it("includes glints as a pipeline source", () => {
+    expect(isExtractorSourceId("glints")).toBe(true);
+    expect(EXTRACTOR_SOURCE_METADATA.glints).toMatchObject({
+      label: "Glints",
+      category: "pipeline",
+    });
+  });
 });
