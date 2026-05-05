@@ -241,6 +241,10 @@ export const getEnabledSources = (
       enabled.push(source);
       continue;
     }
+    if (source === "kalibrr") {
+      enabled.push(source);
+      continue;
+    }
     if (source === "hiringcafe") {
       enabled.push(source);
       continue;

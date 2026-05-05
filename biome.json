@@ -12,6 +12,8 @@
       "!!docs-site/.docusaurus",
       "!!docs-site/build",
       "!!**/.venv",
+      "!!data/cloudflare-cookies",
+      "!!data/visa-sponsors",
       "!!.claude"
     ]
   },

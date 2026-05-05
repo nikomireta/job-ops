@@ -48,6 +48,10 @@ describe("orchestrator utils", () => {
     expect(getEnabledSources(createAppSettings())).toContain("glints");
   });
 
+  it("enables kalibrr without credentials", () => {
+    expect(getEnabledSources(createAppSettings())).toContain("kalibrr");
+  });
+
   it("counts processing jobs in ready and discovered tabs", () => {
     const jobs = [
       createJob({ id: "ready", status: "ready", closedAt: null }),

@@ -262,6 +262,7 @@ export const DEMO_SOURCE_BASE_URLS: Record<JobSource, string> = {
   seek: "https://www.seek.com.au",
   naukri: "https://www.naukri.com",
   glints: "https://glints.com",
+  kalibrr: "https://www.kalibrr.com",
   manual: "https://example.com",
 };
 

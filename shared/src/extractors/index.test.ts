@@ -41,4 +41,12 @@ describe("extractor source catalog", () => {
       category: "pipeline",
     });
   });
+
+  it("includes kalibrr as a pipeline source", () => {
+    expect(isExtractorSourceId("kalibrr")).toBe(true);
+    expect(EXTRACTOR_SOURCE_METADATA.kalibrr).toMatchObject({
+      label: "Kalibrr",
+      category: "pipeline",
+    });
+  });
 });

@@ -38,6 +38,19 @@ describe("extractor deployment config", () => {
     expect(dockerfile).toContain("COPY extractors/glints ./extractors/glints");
   });
 
+  it("ships the Kalibrr extractor in Docker runtime images", async () => {
+    const dockerfile = await readFile(resolve(process.cwd(), "../Dockerfile"), {
+      encoding: "utf8",
+    });
+
+    expect(dockerfile).toContain(
+      "COPY extractors/kalibrr/package*.json ./extractors/kalibrr/",
+    );
+    expect(dockerfile).toContain(
+      "COPY extractors/kalibrr ./extractors/kalibrr",
+    );
+  });
+
   it("syncs the Naukri extractor in compose development mode", async () => {
     const composeFile = await readFile(
       resolve(process.cwd(), "../docker-compose.yml"),
@@ -66,5 +79,15 @@ describe("extractor deployment config", () => {
 
     expect(composeFile).toContain("path: ./extractors/glints");
     expect(composeFile).toContain("target: /app/extractors/glints");
+  });
+
+  it("syncs the Kalibrr extractor in compose development mode", async () => {
+    const composeFile = await readFile(
+      resolve(process.cwd(), "../docker-compose.yml"),
+      { encoding: "utf8" },
+    );
+
+    expect(composeFile).toContain("path: ./extractors/kalibrr");
+    expect(composeFile).toContain("target: /app/extractors/kalibrr");
   });
 });

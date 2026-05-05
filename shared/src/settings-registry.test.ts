@@ -155,6 +155,24 @@ describe("settingsRegistry helpers", () => {
       }
     });
 
+    it("uses env-backed defaults for kalibrr per-term caps", () => {
+      const previousKalibrrMaxJobsPerTerm =
+        process.env.KALIBRR_MAX_JOBS_PER_TERM;
+
+      process.env.KALIBRR_MAX_JOBS_PER_TERM = "65";
+
+      try {
+        expect(settingsRegistry.kalibrrMaxJobsPerTerm.default()).toBe(65);
+        expect(settingsRegistry.kalibrrMaxJobsPerTerm.parse("25")).toBe(25);
+      } finally {
+        if (previousKalibrrMaxJobsPerTerm === undefined) {
+          delete process.env.KALIBRR_MAX_JOBS_PER_TERM;
+        } else {
+          process.env.KALIBRR_MAX_JOBS_PER_TERM = previousKalibrrMaxJobsPerTerm;
+        }
+      }
+    });
+
     it("clamps backupHour to 0-23", () => {
       expect(settingsRegistry.backupHour.parse("25")).toBe(23);
       expect(settingsRegistry.backupHour.parse("-1")).toBe(0);

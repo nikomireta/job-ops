@@ -312,6 +312,7 @@ function createDefaultSupportedCountryKeys(
     case "naukri":
       return ["india"];
     case "glints":
+    case "kalibrr":
       return ["indonesia"];
     case "jobindex":
       return ["denmark"];

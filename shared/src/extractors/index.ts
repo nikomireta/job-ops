@@ -15,6 +15,7 @@ export const EXTRACTOR_SOURCE_IDS = [
   "seek",
   "naukri",
   "glints",
+  "kalibrr",
   "manual",
 ] as const;
 
@@ -85,6 +86,11 @@ export const EXTRACTOR_SOURCE_METADATA: Record<
   glints: {
     label: "Glints",
     order: 108,
+    category: "pipeline",
+  },
+  kalibrr: {
+    label: "Kalibrr",
+    order: 109,
     category: "pipeline",
   },
   manual: { label: "Manual", order: 110, category: "manual" },

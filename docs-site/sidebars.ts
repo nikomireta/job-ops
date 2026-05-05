@@ -55,6 +55,7 @@ const sidebars: SidebarsConfig = {
         "extractors/jobindex",
         "extractors/seek",
         "extractors/glints",
+        "extractors/kalibrr",
         "extractors/manual",
         "extractors/ukvisajobs",
       ],
