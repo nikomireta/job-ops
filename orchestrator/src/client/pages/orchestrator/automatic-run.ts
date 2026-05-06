@@ -152,6 +152,7 @@ export interface ExtractorLimits {
   glintsMaxJobsPerTerm: number;
   kalibrrMaxJobsPerTerm: number;
   deallsMaxJobsPerTerm: number;
+  techinasiaMaxJobsPerTerm: number;
 }
 
 export function inferAutomaticPresetSelection(args: {
@@ -212,6 +213,7 @@ export function deriveExtractorLimits(args: {
   const includesGlints = args.sources.includes("glints");
   const includesKalibrr = args.sources.includes("kalibrr");
   const includesDealls = args.sources.includes("dealls");
+  const includesTechInAsia = args.sources.includes("techinasia");
 
   const weightedContributors =
     (includesIndeed ? termCount : 0) +
@@ -228,7 +230,8 @@ export function deriveExtractorLimits(args: {
     (includesNaukri ? termCount : 0) +
     (includesGlints ? termCount : 0) +
     (includesKalibrr ? termCount : 0) +
-    (includesDealls ? termCount : 0);
+    (includesDealls ? termCount : 0) +
+    (includesTechInAsia ? termCount : 0);
 
   if (weightedContributors <= 0) {
     return {
@@ -244,6 +247,7 @@ export function deriveExtractorLimits(args: {
       glintsMaxJobsPerTerm: budget,
       kalibrrMaxJobsPerTerm: budget,
       deallsMaxJobsPerTerm: budget,
+      techinasiaMaxJobsPerTerm: budget,
     };
   }
 
@@ -263,6 +267,7 @@ export function deriveExtractorLimits(args: {
     glintsMaxJobsPerTerm: perUnit,
     kalibrrMaxJobsPerTerm: perUnit,
     deallsMaxJobsPerTerm: perUnit,
+    techinasiaMaxJobsPerTerm: perUnit,
   };
 }
 
@@ -354,6 +359,7 @@ export function calculateAutomaticEstimate(args: {
   const hasGlints = sources.includes("glints");
   const hasKalibrr = sources.includes("kalibrr");
   const hasDealls = sources.includes("dealls");
+  const hasTechInAsia = sources.includes("techinasia");
   const limits = deriveExtractorLimits({
     budget: values.runBudget,
     searchTerms: values.searchTerms,
@@ -386,6 +392,9 @@ export function calculateAutomaticEstimate(args: {
   const glintsCap = hasGlints ? limits.glintsMaxJobsPerTerm * termCount : 0;
   const kalibrrCap = hasKalibrr ? limits.kalibrrMaxJobsPerTerm * termCount : 0;
   const deallsCap = hasDealls ? limits.deallsMaxJobsPerTerm * termCount : 0;
+  const techInAsiaCap = hasTechInAsia
+    ? limits.techinasiaMaxJobsPerTerm * termCount
+    : 0;
 
   const discoveredCap =
     jobspyCap +
@@ -400,7 +409,8 @@ export function calculateAutomaticEstimate(args: {
     naukriCap +
     glintsCap +
     kalibrrCap +
-    deallsCap;
+    deallsCap +
+    techInAsiaCap;
   const discoveredMin = Math.round(discoveredCap * 0.35);
   const discoveredMax = Math.round(discoveredCap * 0.75);
   const processedMin = Math.min(values.topN, discoveredMin);

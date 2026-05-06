@@ -66,6 +66,7 @@ export interface PipelineRunSourceLimitSnapshot {
   glintsMaxJobsPerTerm: number;
   kalibrrMaxJobsPerTerm: number;
   deallsMaxJobsPerTerm: number;
+  techinasiaMaxJobsPerTerm: number;
   jobindexMaxJobsPerTerm: number;
   jobspyResultsWanted: number;
 }

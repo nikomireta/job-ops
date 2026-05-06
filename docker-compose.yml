@@ -82,6 +82,9 @@ services:
         - path: ./extractors/dealls
           target: /app/extractors/dealls
           action: sync+restart
+        - path: ./extractors/techinasia
+          target: /app/extractors/techinasia
+          action: sync+restart
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3001/health"]

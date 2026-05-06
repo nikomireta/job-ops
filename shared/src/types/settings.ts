@@ -175,6 +175,7 @@ export interface AppSettings {
   glintsMaxJobsPerTerm: Resolved<number>;
   kalibrrMaxJobsPerTerm: Resolved<number>;
   deallsMaxJobsPerTerm: Resolved<number>;
+  techinasiaMaxJobsPerTerm: Resolved<number>;
   jobindexMaxJobsPerTerm: Resolved<number>;
   searchTerms: Resolved<string[]>;
   workplaceTypes: Resolved<Array<"remote" | "hybrid" | "onsite">>;

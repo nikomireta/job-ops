@@ -148,6 +148,13 @@ const HEALTH_PROBE_CONFIG_BY_SOURCE: Record<
       deallsMaxJobsPerTerm: "1",
     },
   },
+  techinasia: {
+    searchTerm: DEFAULT_HEALTH_SEARCH_TERM,
+    selectedCountry: "indonesia",
+    settings: {
+      techinasiaMaxJobsPerTerm: "1",
+    },
+  },
   manual: {
     searchTerm: DEFAULT_HEALTH_SEARCH_TERM,
     selectedCountry: DEFAULT_HEALTH_SELECTED_COUNTRY,

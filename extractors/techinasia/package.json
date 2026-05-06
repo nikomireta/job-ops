@@ -1,0 +1,19 @@
+{
+  "name": "techinasia-extractor",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Tech in Asia Indonesia extractor - fetches public job listings from Tech in Asia Jobs",
+  "main": "src/run.ts",
+  "dependencies": {
+    "job-ops-shared": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.0"
+  },
+  "scripts": {
+    "check:types": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN ../../LICENSE"
+}

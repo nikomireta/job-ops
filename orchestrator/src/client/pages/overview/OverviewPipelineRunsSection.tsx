@@ -361,7 +361,7 @@ function RunInsightsBody(props: {
                 <MetricCard
                   label="Source limits"
                   value={`Indeed ${savedDetails.effectiveConfig.sourceLimits.jobspyResultsWanted}; UK Visa Jobs ${savedDetails.effectiveConfig.sourceLimits.ukvisajobsMaxJobs}`}
-                  hint={`Adzuna ${savedDetails.effectiveConfig.sourceLimits.adzunaMaxJobsPerTerm}; Gradcracker ${savedDetails.effectiveConfig.sourceLimits.gradcrackerMaxJobsPerTerm}; startup.jobs ${savedDetails.effectiveConfig.sourceLimits.startupjobsMaxJobsPerTerm}; Jobindex ${savedDetails.effectiveConfig.sourceLimits.jobindexMaxJobsPerTerm}; Glints ${savedDetails.effectiveConfig.sourceLimits.glintsMaxJobsPerTerm}; Kalibrr ${savedDetails.effectiveConfig.sourceLimits.kalibrrMaxJobsPerTerm}; Dealls ${savedDetails.effectiveConfig.sourceLimits.deallsMaxJobsPerTerm}`}
+                  hint={`Adzuna ${savedDetails.effectiveConfig.sourceLimits.adzunaMaxJobsPerTerm}; Gradcracker ${savedDetails.effectiveConfig.sourceLimits.gradcrackerMaxJobsPerTerm}; startup.jobs ${savedDetails.effectiveConfig.sourceLimits.startupjobsMaxJobsPerTerm}; Jobindex ${savedDetails.effectiveConfig.sourceLimits.jobindexMaxJobsPerTerm}; Glints ${savedDetails.effectiveConfig.sourceLimits.glintsMaxJobsPerTerm}; Kalibrr ${savedDetails.effectiveConfig.sourceLimits.kalibrrMaxJobsPerTerm}; Dealls ${savedDetails.effectiveConfig.sourceLimits.deallsMaxJobsPerTerm}; Tech in Asia ${savedDetails.effectiveConfig.sourceLimits.techinasiaMaxJobsPerTerm}`}
                 />
                 <MetricCard
                   label="Resume projects"

@@ -264,6 +264,7 @@ export const DEMO_SOURCE_BASE_URLS: Record<JobSource, string> = {
   glints: "https://glints.com",
   kalibrr: "https://www.kalibrr.com",
   dealls: "https://dealls.com",
+  techinasia: "https://www.techinasia.com",
   manual: "https://example.com",
 };
 

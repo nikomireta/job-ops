@@ -1,0 +1,169 @@
+[
+  {
+    "q": "software engineer",
+    "status": 200,
+    "nbHits": 60,
+    "nbPages": 12,
+    "page": 0,
+    "hits": [
+      {
+        "id": "44e51ec0-22ab-4c03-9dbc-439bb090f47e",
+        "title": "SEO GEO Specialist",
+        "company": "Kumparan",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-05-04 06:58:40",
+        "work": "hybrid",
+        "jobType": "Full-time"
+      },
+      {
+        "id": "8a8445fd-795d-44f1-bb70-aba09f37ce35",
+        "title": "Golang Developer",
+        "company": "Indocyber Global Teknologi",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-29 07:11:11",
+        "work": "on-site",
+        "jobType": "Contract"
+      },
+      {
+        "id": "56b0ce68-e3b3-4cd4-bf11-0f287dd863d6",
+        "title": "IT Business Analyst (Treasury / Front Arena Banking experience)",
+        "company": "PT Appfuxion Consulting Indonesia",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-28 09:07:11",
+        "work": "on-site",
+        "jobType": "Contract"
+      },
+      {
+        "id": "6b5f1746-570e-4f2e-afa7-3e1bcafdb751",
+        "title": "Java Springboot Developer",
+        "company": "SIGMATECH",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-27 06:45:00",
+        "work": "on-site",
+        "jobType": "Contract"
+      },
+      {
+        "id": "0904194d-d72f-4c34-95d0-2ddb3fa0b28b",
+        "title": "Cloud Engineer (Mid Level)",
+        "company": "PT Tiga Daya Digital Indonesia",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-24 08:26:13",
+        "work": "on-site",
+        "jobType": "Contract"
+      }
+    ]
+  },
+  {
+    "q": "cloud engineer",
+    "status": 200,
+    "nbHits": 13,
+    "nbPages": 3,
+    "page": 0,
+    "hits": [
+      {
+        "id": "0904194d-d72f-4c34-95d0-2ddb3fa0b28b",
+        "title": "Cloud Engineer (Mid Level)",
+        "company": "PT Tiga Daya Digital Indonesia",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-24 08:26:13",
+        "work": "on-site",
+        "jobType": "Contract"
+      },
+      {
+        "id": "7767ff94-6d19-4bee-bd6c-493795ddcf5b",
+        "title": "Data Engineer",
+        "company": "Sagara Technology Group",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-27 06:19:04",
+        "work": "on-site",
+        "jobType": "Contract"
+      },
+      {
+        "id": "a3dad1b7-4a81-4b9c-8e4a-0fd81fefe7d4",
+        "title": "DevOps Engineer",
+        "company": "Mobius Digital",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-15 07:23:44",
+        "work": "hybrid",
+        "jobType": "Full-time"
+      },
+      {
+        "id": "d0db8616-bcfb-4938-9437-1b015fe0e2de",
+        "title": "Data Engineer (Senior)",
+        "company": "SIGMATECH",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-08 03:15:55",
+        "work": "on-site",
+        "jobType": "Contract"
+      },
+      {
+        "id": "3226891b-a05b-4f77-917d-077ce58c79e6",
+        "title": "L2 System Engineer",
+        "company": "Graha Karya Informasi",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-20 09:10:44",
+        "work": "on-site",
+        "jobType": "Contract"
+      }
+    ]
+  },
+  {
+    "q": "DevOps",
+    "status": 200,
+    "nbHits": 4,
+    "nbPages": 1,
+    "page": 0,
+    "hits": [
+      {
+        "id": "a3dad1b7-4a81-4b9c-8e4a-0fd81fefe7d4",
+        "title": "DevOps Engineer",
+        "company": "Mobius Digital",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-15 07:23:44",
+        "work": "hybrid",
+        "jobType": "Full-time"
+      },
+      {
+        "id": "0000ea81-d09e-4046-9676-033127572826",
+        "title": "Junior Cloud Infrastructure - Telecommunication Industry",
+        "company": "SIGMATECH",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-22 07:07:06",
+        "work": "on-site",
+        "jobType": "Contract"
+      },
+      {
+        "id": "e4720d21-6095-4bf4-8806-425614b4fc28",
+        "title": "Security Infrastructure - Telecommunication Industry",
+        "company": "SIGMATECH",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-22 07:19:52",
+        "work": "on-site",
+        "jobType": "Contract"
+      },
+      {
+        "id": "7972394f-34f1-46c4-844d-631d450076bd",
+        "title": "System Analyst",
+        "company": "TalentGo AI",
+        "country": "Indonesia",
+        "city": "Jakarta",
+        "date": "2026-04-28 12:29:51",
+        "work": "on-site",
+        "jobType": "Full-time"
+      }
+    ]
+  }
+]

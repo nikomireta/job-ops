@@ -1,0 +1,1040 @@
+{
+  "status": 200,
+  "ok": true,
+  "json": {
+    "results": [
+      {
+        "hits": [
+          {
+            "city": {
+              "country_id": "365832f3-641f-4f3a-b8c6-6932d1deb5fe",
+              "country_name": "Indonesia",
+              "id": "92cdb8b5-3ae5-41fd-a2d6-72c829e37c5d",
+              "name": "Tangerang",
+              "work_country_name": "Indonesia"
+            },
+            "company": {
+              "avatar": "https://cdn.techinasia.com/data/images/Ua3USsCesSR6VveteIqCL3W2EQ4Zy1LVve6bXYgo.png",
+              "entity_id": "8d4d6513-0719-4a93-b3f5-0a2937e49c17",
+              "entity_slug": "true-indonesia",
+              "entity_locations": [
+                {
+                  "city_id": "",
+                  "city_name": null,
+                  "country_id": "365832f3-641f-4f3a-b8c6-6932d1deb5fe",
+                  "country_name": "Indonesia",
+                  "id": "8623e5cb-fc7f-495f-8f0a-81e4130eb28f",
+                  "type": "hq"
+                }
+              ],
+              "id": "c8122f8b-4924-477c-a895-69b04aee1ac8",
+              "name": "True Indonesia",
+              "employee_count": "11 - 50",
+              "employee_min_count": 11,
+              "employee_max_count": 50,
+              "employee_rating": null
+            },
+            "currency": {
+              "currency_code": "IDR",
+              "currency_symbol": "Rp",
+              "id": "4886deb5-ba2b-4234-b7a2-f0776e1c9eb0",
+              "name": "Indonesian Rupiahs"
+            },
+            "description": "<p>We are looking for a Digital Marketing Intern to support our online marketing activities across Google Ads, Meta Ads, SEO/content, and social media. You will work directly with a senior digital marketing specialist, assist in marketing planning, and bring creative ideas to our campaigns.</p>\n<p>You’ll be working across a couple of brands within our group, gaining exposure to different audiences and campaigns. For administrative purposes, the internship will be registered under CV Wisma Kencana Andalas.</p><p>\n<strong>Key Responsibilities</strong>\n</p>\n\n<ul><li>Support further marketing planning for the company, including brainstorming campaign ideas, contributing to simple strategy outlines, and helping prepare basic planning documents.</li>\n  <li>Support weekly and monthly Google Ads performance reporting, document campaign findings and assist in preparing presentations for internal stakeholders.</li>\n  <li>Conduct weekly Google Ads search term analysis, flag irrelevant queries and new keyword opportunities.</li>\n  <li>Review Google Ads copy and creative assets for performance and suggest improvements where applicable.</li>\n  <li>Assist in keyword research and content gap analysis for SEO planning and help develop outlines for travel-related articles.</li>\n  <li>Support basic research and fact-checking for travel-related articles.</li>\n  <li>Proactively research trends and think strategically to develop content ideas, directions, and captions of Social Media, while supporting content planning, scheduling, and publishing</li>\n  <li>Work under the guidance of the Senior Digital Marketing Specialist for execution, while being expected to take initiative in developing and improving social media without waiting for direction</li>\n  <li>Assist in further marketing planning for the company, including brainstorming ideas, outlining simple strategies, and helping prepare basic planning documents.</li>\n  <li>Use AI tools (Perplexity / Claude) to speed up research, idea generation, and drafts, while learning how to review and improve AI-generated output.</li>\n</ul>\n\n<p><strong>What We Are Looking For</strong>\n</p>\n\n<ul><li>Final-year student or fresh graduate in Marketing, Communications, Business, or a related field, available to commit full-time for the internship period.</li>\n  <li>Strong interest in digital marketing and branding, with a more creative mindset than purely data-driven.</li>\n  <li>Comfortable working with basic performance metrics, reports, and dashboards.</li>\n  <li>Detail-oriented and responsible, able to follow guidelines while suggesting new ideas and creative angles.</li>\n  <li>Good written communication skills in English.</li>\n  <li>Curious and willing to work with AI tools (e.g., Claude, Perplexity) as part of the daily workflow; prior experience beyond basic prompting is a plus.</li>\n  <li>Basic familiarity with at least one platform (Google Ads, Meta Business Suite, or SEO tools) is a plus.</li>\n</ul>\n\n<p><strong>What You Will Gain</strong>\n</p>\n\n<ul><li>Hands-on experience across Google Ads and Meta Ads with real budgets, SEO, and social media.</li>\n  <li>Practical experience using AI tools as part of a real marketing workflow, working alongside AI to produce better and more efficient outputs.</li>\n  <li>Direct day-to-day guidance from a senior digital marketing specialist across all channels.</li>\n</ul>\n\n<p><br></p>",
+            "experience": "0-15",
+            "experience_max": 15,
+            "experience_min": 0,
+            "expires_at": "2026-06-14 06:53:45",
+            "external_link": "",
+            "has_equity": 0,
+            "id": "4a99256f-b531-46b1-9dce-d2fafd69c6a1",
+            "industries": [
+              {
+                "id": "85c5cb20-bef9-424e-a48f-9dc83d4e71fa",
+                "name": "Travel & Tourism",
+                "slug": "travel-tourism",
+                "vertical_name": "Travel"
+              }
+            ],
+            "is_boosted": true,
+            "is_remote": 0,
+            "is_salary_visible": 1,
+            "job_skills": [
+              {
+                "id": "0bb65880-73ef-4f35-859e-57327f8988f0",
+                "name": "Marketing Strategy"
+              },
+              {
+                "id": "87c6b2bf-f4cc-436c-b2e1-7328b1050e9b",
+                "name": "Digital Marketing"
+              },
+              {
+                "id": "8a78ba3d-e150-4412-83b8-4edcd6f09e73",
+                "name": "Social Media Strategy"
+              },
+              {
+                "id": "bc337481-0aee-4073-8eb7-3535d9441da4",
+                "name": "Google Analytics"
+              }
+            ],
+            "job_type": {
+              "id": "3ba3899c-da16-48a8-8e22-c3e75e52af4c",
+              "name": "Internship"
+            },
+            "position": {
+              "id": "8ba29919-9179-4981-8570-ab185d14f915",
+              "name": "Marketing & PR"
+            },
+            "published_at": "2026-04-15 06:53:45",
+            "salary_avg": 1750000,
+            "salary_max": 2000000,
+            "salary_min": 1500000,
+            "starts_featuring_at": "2026-05-05 07:32:15",
+            "taxonomies": [],
+            "title": "Digital Marketing Intern",
+            "tz_offset_max": null,
+            "tz_offset_min": null,
+            "vacancy_count": 1,
+            "work_arrangement": "on-site",
+            "objectID": "4a99256f-b531-46b1-9dce-d2fafd69c6a1",
+            "_highlightResult": {
+              "city": {
+                "name": {
+                  "value": "Tangerang",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                },
+                "work_country_name": {
+                  "value": "Indonesia",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "company": {
+                "name": {
+                  "value": "True Indonesia",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "industries": [
+                {
+                  "name": {
+                    "value": "Travel & Tourism",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "vertical_name": {
+                    "value": "Travel",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              ],
+              "job_skills": [
+                {
+                  "name": {
+                    "value": "Marketing Strategy",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "Digital Marketing",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "Social Media Strategy",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "Google Analytics",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              ],
+              "job_type": {
+                "name": {
+                  "value": "Internship",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "position": {
+                "name": {
+                  "value": "Marketing & PR",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "salary_avg": {
+                "value": "1750000",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "salary_min": {
+                "value": "1500000",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "title": {
+                "value": "Digital Marketing Intern",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          },
+          {
+            "rank": 42,
+            "city": {
+              "country_id": "365832f3-641f-4f3a-b8c6-6932d1deb5fe",
+              "country_name": "Indonesia",
+              "id": "4bfed6fc-8ba2-48b5-b70b-c0050a3a9d41",
+              "name": "Jakarta",
+              "work_country_name": "Indonesia"
+            },
+            "company": {
+              "avatar": "https://cdn.techinasia.com/data/images/KvjNCFcHDHZjXBlUxmRwqZUiau8r5zWF3JQ4jkmQ.png",
+              "entity_id": "657b6684-9e5f-48b6-916f-534f5712274d",
+              "entity_slug": "sigmatech-1",
+              "entity_locations": [
+                {
+                  "city_id": "",
+                  "city_name": null,
+                  "country_id": "365832f3-641f-4f3a-b8c6-6932d1deb5fe",
+                  "country_name": "Indonesia",
+                  "id": "246b30f9-142a-48c6-af46-7bac844f1981",
+                  "type": "hq"
+                }
+              ],
+              "id": "ec8e1a4c-3fdb-4f72-913b-ec2e8f9961e3",
+              "name": "SIGMATECH",
+              "employee_count": "201 - 500",
+              "employee_min_count": 201,
+              "employee_max_count": 500,
+              "employee_rating": null
+            },
+            "currency": {
+              "currency_code": "IDR",
+              "currency_symbol": "Rp",
+              "id": "4886deb5-ba2b-4234-b7a2-f0776e1c9eb0",
+              "name": "Indonesian Rupiahs"
+            },
+            "description": "<p><em><strong>Notes</strong></em></p>\n<p><em><strong>Status: PKWT 12 months under Sigmatech (extendable)</strong></em></p>\n<p><em><strong>Placement: Fintech Industry (WFO, Central Jakarta)</strong></em></p>\n<p><em><strong>Salary: 10.5 mio gross + 250.000 transport allowance</strong></em></p>\n<p><em><strong>Benefit: Laptop provided, BPJS Kesehatan &amp; Ketenagakerjaan, Kompensasi UUCK 100%, THR Prorate</strong></em></p>\n<p><br></p>\n<p><em><strong>Job Description: </strong></em></p>\n<p><em><strong>Summary:</strong></em></p>\n<p>As a Data Analyst &amp; Insight, you will transform raw data into meaningful stories. You will be responsible for interpreting data, creating dashboards, and providing actionable recommendations to help the business make smarter decisions.</p>\n<p><br></p>\n<p><em><strong>Key Responsibilities:</strong></em></p>\n<ul><li>Data Analysis: Clean, process, and analyze large datasets to identify trends, patterns, and anomalies.</li>\n  <li>Reporting: Design and maintain automated dashboards (e.g., Tableau, Power BI, or Looker) to track key business metrics.</li>\n  <li>Business Insights: Translate data findings into clear, actionable insights for stakeholders (Product, Marketing, or Management).</li>\n  <li>Data Integrity: Ensure data accuracy and consistency by working closely with the Data Engineering team.</li>\n  <li>Problem Solving: Support various departments by answering business questions through ad-hoc data deep-dives.</li>\n</ul>\n\n<p><br></p>\n<p><em><strong>Requirements</strong></em></p>\n<ul><li>Education: Bachelor’s degree in Mathematics, Statistics, Computer Science, Economics, or a related field.</li>\n  <li>Experience: Minimum [X] years of experience in a data-driven role (Experience in Fintech/E-commerce is a plus).</li>\n  <li>Strong proficiency in SQL (a must).</li>\n  <li>Experience with Data Visualization tools (e.g., Tableau, Power BI, or Google Data Studio).</li>\n  <li>Basic knowledge of Python or R for data manipulation.</li>\n  <li>Analytical Thinking: Exceptional ability to analyze complex problems and provide data-backed solutions.</li>\n  <li>Attention to Detail: High precision in data handling and reporting.</li>\n</ul>",
+            "experience": "3-15",
+            "experience_max": 15,
+            "experience_min": 3,
+            "expires_at": "2026-07-04 10:10:52",
+            "external_link": "",
+            "has_equity": 0,
+            "id": "5441069a-5114-4f87-9463-583234a808f3",
+            "industries": [
+              {
+                "id": "36819ad7-e4b4-4ca8-bf63-2fa9f72e2c90",
+                "name": "Clean Technology IT",
+                "slug": "clean-technology-it",
+                "vertical_name": "Clean tech"
+              }
+            ],
+            "is_boosted": true,
+            "is_remote": 0,
+            "is_salary_visible": 1,
+            "job_skills": [
+              {
+                "id": "283ae387-9a75-46f7-9116-cdecdf479110",
+                "name": "PowerBI"
+              },
+              {
+                "id": "44b9bc04-3626-42bd-b9d2-fd61363ac317",
+                "name": "Data Visualization"
+              },
+              {
+                "id": "56ca8561-3668-4c22-aa99-6c7adab499af",
+                "name": "Python"
+              },
+              {
+                "id": "711403b6-bc0e-4ec9-8e58-0ad7b3933b5f",
+                "name": "SQL"
+              },
+              {
+                "id": "d5b46ce3-5687-4c58-b967-a1bd1d0316a6",
+                "name": "Tableau"
+              },
+              {
+                "id": "da2e638c-ed28-4832-b624-017b016c6482",
+                "name": "Data Analysis"
+              }
+            ],
+            "job_type": {
+              "id": "c083592d-7d77-476f-8682-f62007c93851",
+              "name": "Contract"
+            },
+            "position": {
+              "id": "e2a3d8ff-82d0-4c80-8138-e2c6a5a57434",
+              "name": "Data & Analytics"
+            },
+            "published_at": "2026-05-05 10:10:52",
+            "salary_avg": 10000000,
+            "salary_max": 11000000,
+            "salary_min": 9000000,
+            "starts_featuring_at": null,
+            "taxonomies": [],
+            "title": "Data Analyst & Insight (Fintech Industry)",
+            "tz_offset_max": null,
+            "tz_offset_min": null,
+            "vacancy_count": 1,
+            "work_arrangement": "on-site",
+            "objectID": "5441069a-5114-4f87-9463-583234a808f3",
+            "_highlightResult": {
+              "city": {
+                "name": {
+                  "value": "Jakarta",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                },
+                "work_country_name": {
+                  "value": "Indonesia",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "company": {
+                "name": {
+                  "value": "SIGMATECH",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "industries": [
+                {
+                  "name": {
+                    "value": "Clean Technology IT",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "vertical_name": {
+                    "value": "Clean tech",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              ],
+              "job_skills": [
+                {
+                  "name": {
+                    "value": "PowerBI",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "Data Visualization",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "Python",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "SQL",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "Tableau",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "Data Analysis",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              ],
+              "job_type": {
+                "name": {
+                  "value": "Contract",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "position": {
+                "name": {
+                  "value": "Data & Analytics",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "salary_avg": {
+                "value": "10000000",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "salary_min": {
+                "value": "9000000",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "title": {
+                "value": "Data Analyst & Insight (Fintech Industry)",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          },
+          {
+            "rank": 24,
+            "city": {
+              "country_id": "365832f3-641f-4f3a-b8c6-6932d1deb5fe",
+              "country_name": "Indonesia",
+              "id": "4bfed6fc-8ba2-48b5-b70b-c0050a3a9d41",
+              "name": "Jakarta",
+              "work_country_name": "Indonesia"
+            },
+            "company": {
+              "avatar": "https://cdn.techinasia.com/data/images/630dfae1e5c3d8f5f7d6d8fb5bcb5d68.png",
+              "entity_id": "e54decbd-1bbb-49e4-97ef-8dbcd27668e6",
+              "entity_slug": "kumparancom",
+              "entity_locations": [
+                {
+                  "city_id": "",
+                  "city_name": null,
+                  "country_id": "365832f3-641f-4f3a-b8c6-6932d1deb5fe",
+                  "country_name": "Indonesia",
+                  "id": "ac3421c5-6965-4f53-ab84-ed127944238d",
+                  "type": "hq"
+                }
+              ],
+              "id": "6a8444ab-b496-45d3-900c-c079b40c39bc",
+              "name": "Kumparan",
+              "employee_count": "201 - 500",
+              "employee_min_count": 201,
+              "employee_max_count": 500,
+              "employee_rating": null
+            },
+            "currency": {
+              "currency_code": "IDR",
+              "currency_symbol": "Rp",
+              "id": "4886deb5-ba2b-4234-b7a2-f0776e1c9eb0",
+              "name": "Indonesian Rupiahs"
+            },
+            "description": "<p><strong>Responsibilities:</strong></p>\n<ul><li>Partner with cross-functional stakeholders (product, marketing, content, revenue) to translate business questions into analytical frameworks and deliverables</li>\n  <li>Build and maintain dashboards, reports, and self-serve analytics tools that support day-to-day decisions</li>\n  <li>Conduct deep-dive analyses to surface trends, opportunities, and risks across engagement, monetization, audience growth, and content performance</li>\n  <li>Design and analyze experiments (A/B tests, feature rollouts) to validate hypotheses and quantify business impact</li>\n  <li>Develop forecasting and quantitative models to support both short-term planning and long-term strategy</li>\n  <li>Define and standardize key metrics across teams, ensuring consistency in how the business measures success</li>\n  <li>Collaborate with Data Engineering on data quality, modeling, and pipeline improvements</li>\n  <li>Mentor junior analysts and champion data literacy and a data-driven culture across the organization</li>\n</ul>\n\n<p><strong>Qualifications:</strong></p>\n<ul><li>3+ years of experience in business analytics, BI, or data analytics roles (media, digital, or consumer tech industries strongly preferred)</li>\n  <li>Strong proficiency in SQL — comfortable writing complex queries, optimizing performance, and working with large datasets in cloud data warehouses (BigQuery, Snowflake, Redshift, or similar)</li>\n  <li>Hands-on experience with modern BI/visualization tools (Looker, Tableau, Power BI, Metabase, or similar)</li>\n  <li>Working knowledge of Python (or R) for analysis, automation, and statistical modeling</li>\n  <li>Solid grasp of statistics, experimentation methodology, and forecasting techniques</li>\n  <li>Strong business acumen with deep understanding of media industry metrics (DAU/MAU, retention, ARPU, CTR, watch time, ad revenue metrics, etc.)</li>\n  <li>Excellent communication skills — able to translate complex analyses into clear narratives for both technical and non-technical audiences</li>\n  <li>Self-driven, comfortable with ambiguity, and able to manage multiple priorities under tight deadlines</li>\n</ul>\n\n<p><strong>Nice to Have:</strong></p>\n<ul><li>Familiarity with data modeling concepts and tools like dbt</li>\n  <li>Experience with version control (Git) and code-based analytics workflows</li>\n  <li>Exposure to machine learning or predictive modeling</li>\n  <li>Prior experience mentoring analysts or leading analytics projects end-to-end</li>\n</ul>",
+            "experience": "1-4",
+            "experience_max": 4,
+            "experience_min": 1,
+            "expires_at": "2026-07-04 07:38:27",
+            "external_link": "",
+            "has_equity": 0,
+            "id": "d46acfdb-1dd9-41db-b498-34e15c20270f",
+            "industries": [
+              {
+                "id": "e5966cca-08d3-44d1-885d-8fb81c22812a",
+                "name": "News",
+                "slug": "news",
+                "vertical_name": "Media"
+              }
+            ],
+            "is_boosted": true,
+            "is_remote": 0,
+            "is_salary_visible": 1,
+            "job_skills": [
+              {
+                "id": "711403b6-bc0e-4ec9-8e58-0ad7b3933b5f",
+                "name": "SQL"
+              },
+              {
+                "id": "892f1b32-b6ed-41b5-8328-d3af89edf68f",
+                "name": "BigQuery"
+              },
+              {
+                "id": "c0472e51-b50d-4a8e-9ef7-80965083077a",
+                "name": "Business Intelligence"
+              },
+              {
+                "id": "da2e638c-ed28-4832-b624-017b016c6482",
+                "name": "Data Analysis"
+              }
+            ],
+            "job_type": {
+              "id": "5124b71a-19ad-42ee-8779-de3433bf7f88",
+              "name": "Full-time"
+            },
+            "position": {
+              "id": "e2a3d8ff-82d0-4c80-8138-e2c6a5a57434",
+              "name": "Data & Analytics"
+            },
+            "published_at": "2026-05-05 07:38:27",
+            "salary_avg": 0,
+            "salary_max": 0,
+            "salary_min": 0,
+            "starts_featuring_at": null,
+            "taxonomies": [],
+            "title": " Business Intelligence Analyst",
+            "tz_offset_max": null,
+            "tz_offset_min": null,
+            "vacancy_count": 1,
+            "work_arrangement": "on-site",
+            "objectID": "d46acfdb-1dd9-41db-b498-34e15c20270f",
+            "_highlightResult": {
+              "city": {
+                "name": {
+                  "value": "Jakarta",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                },
+                "work_country_name": {
+                  "value": "Indonesia",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "company": {
+                "name": {
+                  "value": "Kumparan",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "industries": [
+                {
+                  "name": {
+                    "value": "News",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  },
+                  "vertical_name": {
+                    "value": "Media",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              ],
+              "job_skills": [
+                {
+                  "name": {
+                    "value": "SQL",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "BigQuery",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "Business Intelligence",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                },
+                {
+                  "name": {
+                    "value": "Data Analysis",
+                    "matchLevel": "none",
+                    "matchedWords": []
+                  }
+                }
+              ],
+              "job_type": {
+                "name": {
+                  "value": "Full-time",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "position": {
+                "name": {
+                  "value": "Data & Analytics",
+                  "matchLevel": "none",
+                  "matchedWords": []
+                }
+              },
+              "salary_avg": {
+                "value": "0",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "salary_min": {
+                "value": "0",
+                "matchLevel": "none",
+                "matchedWords": []
+              },
+              "title": {
+                "value": " Business Intelligence Analyst",
+                "matchLevel": "none",
+                "matchedWords": []
+              }
+            }
+          }
+        ],
+        "nbHits": 311,
+        "page": 0,
+        "nbPages": 104,
+        "hitsPerPage": 3,
+        "facets": {
+          "is_remote": {
+            "0": 297,
+            "1": 14
+          },
+          "experience": {
+            "1-4": 37,
+            "0-1": 28,
+            "2-4": 25,
+            "0-15": 21,
+            "1-3": 20,
+            "2-15": 19,
+            "3-15": 19,
+            "0-5": 13,
+            "1-2": 13,
+            "3-5": 12,
+            "2-5": 11,
+            "0-2": 8,
+            "2-3": 7,
+            "1-5": 6,
+            "3-3": 6,
+            "3-4": 6,
+            "0-0": 5,
+            "3-7": 5,
+            "4-10": 5,
+            "4-7": 5,
+            "5-10": 5,
+            "5-15": 5,
+            "1-15": 4,
+            "0-3": 3,
+            "3-6": 3,
+            "4-15": 3,
+            "2-7": 2,
+            "4-6": 2,
+            "7-15": 2,
+            "2-10": 1,
+            "2-2": 1,
+            "2-6": 1,
+            "2-8": 1,
+            "2-9": 1,
+            "3-10": 1,
+            "3-8": 1,
+            "4-12": 1,
+            "4-5": 1,
+            "4-8": 1,
+            "5-8": 1
+          },
+          "has_equity": {
+            "0": 307,
+            "1": 4
+          },
+          "salary_avg": {
+            "0": 141,
+            "1100000": 1,
+            "1150000": 1,
+            "1400000": 1,
+            "1650000": 2,
+            "1750000": 1,
+            "2000000": 3,
+            "2150000": 1,
+            "2425000": 1,
+            "2500000": 1,
+            "3500000": 1,
+            "3750000": 1,
+            "4000000": 2,
+            "4500000": 1,
+            "5500000": 2,
+            "5750000": 6,
+            "6000000": 8,
+            "6350000": 1,
+            "6500000": 4,
+            "6750000": 15,
+            "6800000": 1,
+            "6900000": 9,
+            "7000000": 3,
+            "7250000": 3,
+            "7450000": 2,
+            "7500000": 5,
+            "7750000": 6,
+            "8000000": 8,
+            "8200000": 1,
+            "8250000": 2,
+            "8500000": 2,
+            "8650000": 1,
+            "9000000": 3,
+            "9100000": 2,
+            "9250000": 1,
+            "9350000": 1,
+            "9500000": 6,
+            "9600000": 1,
+            "9900000": 4,
+            "10000000": 3,
+            "10250000": 1,
+            "10300000": 3,
+            "10500000": 3,
+            "10700000": 1,
+            "11000000": 6,
+            "11100000": 1,
+            "11250000": 1,
+            "11500000": 6,
+            "11750000": 1,
+            "12000000": 3,
+            "12500000": 7,
+            "13000000": 1,
+            "13500000": 4,
+            "14000000": 2,
+            "14200000": 1,
+            "14250000": 2,
+            "14750000": 1,
+            "16000000": 3,
+            "16500000": 1,
+            "17500000": 1,
+            "20000000": 1,
+            "20500000": 1,
+            "25000000": 1,
+            "46500000": 1
+          },
+          "job_type.name": {
+            "Full-time": 169,
+            "Contract": 110,
+            "Internship": 20,
+            "Freelance": 9,
+            "Part-time": 3
+          },
+          "position.name": {
+            "Software Engineer": 44,
+            "Data & Analytics": 30,
+            "Marketing & PR": 28,
+            "Sales & Business Development": 25,
+            "QA & Testing": 24,
+            "IT Engineer": 22,
+            "Web Development": 21,
+            "Media & Journalism": 18,
+            "Project & Product Management": 17,
+            "Graphic & Motion Design": 10,
+            "Finance, Legal & Accounting": 9,
+            "Logistics & Operations": 9,
+            "Enterprise Software & Systems": 7,
+            "Strategy & Consulting": 7,
+            "Student": 7,
+            "Executive & Management": 6,
+            "Human Resources": 6,
+            "Mobile Development": 5,
+            "UI/UX Design": 4,
+            "Community Management": 2,
+            "Customer Success": 2,
+            "DevOps & Cloud Management": 2,
+            "Science & Academics": 2,
+            "Administrative & Clerical": 1,
+            "Customer Service": 1,
+            "Retail & Wholesale": 1,
+            "UX/UI Design": 1
+          },
+          "experience_max": {
+            "0": 5,
+            "1": 28,
+            "2": 22,
+            "3": 36,
+            "4": 68,
+            "5": 43,
+            "6": 6,
+            "7": 12,
+            "8": 4,
+            "9": 1,
+            "10": 12,
+            "12": 1,
+            "15": 73
+          },
+          "experience_min": {
+            "0": 78,
+            "1": 80,
+            "2": 69,
+            "3": 53,
+            "4": 18,
+            "5": 11,
+            "7": 2
+          },
+          "industries.name": {
+            "Clean Technology IT": 63,
+            "IT & Cybersecurity": 48,
+            "Education tech": 38,
+            "Internet technology": 36,
+            "Social Media Marketing": 17,
+            "News": 16,
+            "Outsourcing": 14,
+            "Miscellaneous ecommerce": 13,
+            "Logistics": 11,
+            "Advertising": 7,
+            "Software": 6,
+            "Digital bank": 4,
+            "Payments and remittance": 4,
+            "Private Social Networking": 4,
+            "Big Data": 3,
+            "Consulting": 3,
+            "Data Science": 3,
+            "Human Resource": 3,
+            "Interface Design": 3,
+            "Professional Networking": 3,
+            "Web Development": 3,
+            "Digital Media": 2,
+            "Ecommerce aggregators": 2,
+            "Ecommerce seller tools and services": 2,
+            "Marketing Automation": 2,
+            "Agri-fintech": 1,
+            "Digital Entertainment": 1,
+            "Internet marketing": 1,
+            "Investment tools and platforms": 1,
+            "Public Relations": 1,
+            "SaaS": 1,
+            "Travel & Tourism": 1
+          },
+          "job_skills.name": {
+            "Communication Skills": 60,
+            "Sales & Marketing": 50,
+            "Marketing Communications": 40,
+            "Business Development": 39,
+            "Digital Marketing": 34,
+            "Marketing Strategy": 32,
+            "Business Development & Partnerships": 30,
+            "Marketing": 30,
+            "Project Management": 29,
+            "Sales Strategy & Management": 25,
+            "Business Analysis": 23,
+            "SQL": 22,
+            "Content Marketing": 20,
+            "Data Analysis": 20,
+            "Software Testing": 20,
+            "Java": 19,
+            "Software Development": 19,
+            "MySQL": 17,
+            "Python": 17,
+            "Software Engineering": 17,
+            "Functional Testing": 16,
+            "Communications": 15,
+            "Product Management": 15,
+            "Agile Software Development": 14,
+            "Content Creation": 13,
+            "Agile Project Management": 12,
+            "Analytical Skills": 12,
+            "Data Management": 12,
+            "Golang": 12,
+            "Javascript": 12,
+            "Jira": 12,
+            "System Administration": 12,
+            "Test Automation": 12,
+            "Artificial Intelligence (AI)": 11,
+            "Attention to Detail": 11,
+            "Automation": 11,
+            "PostgreSQL": 11,
+            "Regression Testing": 11,
+            "Unit Testing": 11,
+            "APIs": 10,
+            "Databases": 10,
+            "Figma": 10,
+            "Google Cloud Platform (GCP)": 10,
+            "Management": 10,
+            "Test Cases": 10,
+            "Amazon Web Services (AWS)": 9,
+            "Cloud Computing": 9,
+            "Git": 9,
+            "PowerBI": 9,
+            "Presentation Skills": 9,
+            "QA": 9,
+            "REST APIs": 9,
+            "Sales": 9,
+            "Software Architecture": 9,
+            "Software Design": 9,
+            "Web Development": 9,
+            "Digital Media": 8,
+            "Docker": 8,
+            "Information Technology": 8,
+            "Problem Solving": 8,
+            "Public Speaking & Presentations": 8,
+            "Social Media": 8,
+            "Spring": 8,
+            "Web Technologies": 8,
+            "Agile": 7,
+            "Analytics & Reporting": 7,
+            "Backend Development": 7,
+            "Creative Writing": 7,
+            "Enterprise Software": 7,
+            "Graphic Design": 7,
+            "Infrastructure": 7,
+            "Microsoft Excel": 7,
+            "Mobile Development": 7,
+            "Network Security": 7,
+            "Penetration Testing": 7,
+            "Product Development": 7,
+            "SDLC": 7,
+            "SQL Server": 7,
+            "Software": 7,
+            "Technology": 7,
+            "Usability Testing": 7,
+            "Video Editing": 7,
+            "Adobe Creative Suite": 6,
+            "Adobe Illustrator": 6,
+            "Business Operations": 6,
+            "Content Management": 6,
+            "English Language": 6,
+            "Github": 6,
+            "Human Resources": 6,
+            "Information Security": 6,
+            "Machine Learning": 6,
+            "Product Design": 6,
+            "Product Marketing": 6,
+            "React.js": 6,
+            "Selenium": 6,
+            "Teamwork": 6,
+            "TypeScript": 6,
+            "UI/UX Design": 6,
+            "A/B Testing": 5,
+            "Accounting": 5
+          },
+          "work_arrangement": {
+            "on-site": 262,
+            "hybrid": 40,
+            "remote": 9
+          },
+          "city.country_name": {
+            "Indonesia": 311
+          },
+          "is_salary_visible": {
+            "1": 311
+          },
+          "city.work_country_name": {
+            "Indonesia": 297,
+            "Remote": 14
+          },
+          "currency.currency_code": {
+            "IDR": 311
+          },
+          "industries.vertical_name": {
+            "Clean tech": 63,
+            "Security": 48,
+            "Education": 38,
+            "General internet": 36,
+            "Ad tech": 28,
+            "Media": 18,
+            "Ecommerce": 17,
+            "Outsourcing": 14,
+            "Professional services": 12,
+            "Logistics & transportation": 11,
+            "Financial tech": 9,
+            "General software": 6,
+            "Social networking & communication": 4,
+            "Artificial Intelligence": 3,
+            "Big data": 3,
+            "Design": 3,
+            "Agriculture": 1,
+            "Music & entertainment": 1,
+            "Software as a Service": 1,
+            "Travel": 1
+          },
+          "company.employee_max_count": {
+            "10": 7,
+            "50": 49,
+            "200": 69,
+            "500": 153,
+            "1000": 16,
+            "5000": 17
+          },
+          "company.employee_min_count": {
+            "2": 7,
+            "11": 49,
+            "51": 69,
+            "201": 153,
+            "501": 16,
+            "1001": 17
+          }
+        },
+        "facets_stats": {
+          "is_remote": {
+            "min": 0,
+            "max": 1,
+            "avg": 0,
+            "sum": 14
+          },
+          "has_equity": {
+            "min": 0,
+            "max": 1,
+            "avg": 0,
+            "sum": 4
+          },
+          "salary_avg": {
+            "min": 0,
+            "max": 46500000,
+            "avg": 4874356,
+            "sum": 1515925000
+          },
+          "experience_max": {
+            "min": 0,
+            "max": 15,
+            "avg": 6,
+            "sum": 2055
+          },
+          "experience_min": {
+            "min": 0,
+            "max": 7,
+            "avg": 1,
+            "sum": 518
+          },
+          "is_salary_visible": {
+            "min": 1,
+            "max": 1,
+            "avg": 1,
+            "sum": 311
+          },
+          "company.employee_max_count": {
+            "min": 10,
+            "max": 5000,
+            "avg": 623,
+            "sum": 193820
+          },
+          "company.employee_min_count": {
+            "min": 2,
+            "max": 1001,
+            "avg": 192,
+            "sum": 59858
+          }
+        },
+        "exhaustiveFacetsCount": true,
+        "exhaustiveNbHits": true,
+        "exhaustiveTypo": true,
+        "exhaustive": {
+          "facetsCount": true,
+          "nbHits": true,
+          "typo": true
+        },
+        "query": "",
+        "params": "query=&hitsPerPage=3&page=0&facets=%5B%22*%22%5D&facetFilters=%5B%22city.country_name%3AIndonesia%22%5D&tagFilters=",
+        "index": "job_postings",
+        "processingTimeMS": 1,
+        "processingTimingsMS": {
+          "_request": {
+            "roundTrip": 24
+          },
+          "total": 0
+        },
+        "serverTimeMS": 1
+      }
+    ]
+  }
+}

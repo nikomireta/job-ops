@@ -62,6 +62,19 @@ describe("extractor deployment config", () => {
     expect(dockerfile).toContain("COPY extractors/dealls ./extractors/dealls");
   });
 
+  it("ships the Tech in Asia extractor in Docker runtime images", async () => {
+    const dockerfile = await readFile(resolve(process.cwd(), "../Dockerfile"), {
+      encoding: "utf8",
+    });
+
+    expect(dockerfile).toContain(
+      "COPY extractors/techinasia/package*.json ./extractors/techinasia/",
+    );
+    expect(dockerfile).toContain(
+      "COPY extractors/techinasia ./extractors/techinasia",
+    );
+  });
+
   it("syncs the Naukri extractor in compose development mode", async () => {
     const composeFile = await readFile(
       resolve(process.cwd(), "../docker-compose.yml"),
@@ -110,5 +123,15 @@ describe("extractor deployment config", () => {
 
     expect(composeFile).toContain("path: ./extractors/dealls");
     expect(composeFile).toContain("target: /app/extractors/dealls");
+  });
+
+  it("syncs the Tech in Asia extractor in compose development mode", async () => {
+    const composeFile = await readFile(
+      resolve(process.cwd(), "../docker-compose.yml"),
+      { encoding: "utf8" },
+    );
+
+    expect(composeFile).toContain("path: ./extractors/techinasia");
+    expect(composeFile).toContain("target: /app/extractors/techinasia");
   });
 });

@@ -119,6 +119,44 @@ describe("extractor health service", () => {
     );
   });
 
+  it("uses Indonesia and the Tech in Asia source limit for Tech in Asia health probes", async () => {
+    const run = vi.fn().mockResolvedValue({
+      success: true,
+      jobs: [
+        {
+          source: "techinasia",
+          title: "Software Engineer",
+          employer: "Acme",
+          jobUrl:
+            "https://www.techinasia.com/jobs/5441069a-5114-4f87-9463-583234a808f3",
+        },
+      ],
+    });
+    const manifest: ExtractorManifest = {
+      id: "techinasia",
+      displayName: "Tech in Asia",
+      providesSources: ["techinasia"],
+      run,
+    };
+    mockGetExtractorRegistry.mockResolvedValue(createRegistry([manifest]));
+
+    const module = await import("./extractor-health");
+    const result = await module.checkExtractorHealth("techinasia");
+
+    expect(result?.healthy).toBe(true);
+    expect(run).toHaveBeenCalledWith(
+      expect.objectContaining({
+        source: "techinasia",
+        selectedSources: ["techinasia"],
+        searchTerms: ["software"],
+        selectedCountry: "indonesia",
+        settings: expect.objectContaining({
+          techinasiaMaxJobsPerTerm: "1",
+        }),
+      }),
+    );
+  });
+
   it("expires cached results after one hour", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-03-31T10:00:00.000Z"));

@@ -162,6 +162,17 @@ describe("automatic-run utilities", () => {
     expect(limits.deallsMaxJobsPerTerm).toBeLessThanOrEqual(120);
   });
 
+  it("assigns a dedicated Tech in Asia max-jobs limit", () => {
+    const limits = deriveExtractorLimits({
+      budget: 120,
+      searchTerms: ["backend", "platform"],
+      sources: ["techinasia"],
+    });
+
+    expect(limits.techinasiaMaxJobsPerTerm).toBeGreaterThan(0);
+    expect(limits.techinasiaMaxJobsPerTerm).toBeLessThanOrEqual(120);
+  });
+
   it("infers the balanced preset from legacy memory without an explicit preset id", () => {
     ensureStorage().setItem(
       RUN_MEMORY_STORAGE_KEY,
@@ -411,6 +422,26 @@ describe("automatic-run utilities", () => {
         matchStrictness: "exact_only",
       },
       sources: ["dealls"],
+    });
+
+    expect(estimate.discovered.cap).toBeGreaterThan(0);
+    expect(estimate.discovered.cap).toBeLessThanOrEqual(120);
+  });
+
+  it("includes techinasia in estimate caps using the shared term budget", () => {
+    const estimate = calculateAutomaticEstimate({
+      values: {
+        topN: 10,
+        minSuitabilityScore: 50,
+        searchTerms: ["backend", "platform"],
+        runBudget: 120,
+        country: "indonesia",
+        cityLocations: [],
+        workplaceTypes: ["remote", "hybrid", "onsite"],
+        searchScope: "selected_only",
+        matchStrictness: "exact_only",
+      },
+      sources: ["techinasia"],
     });
 
     expect(estimate.discovered.cap).toBeGreaterThan(0);

@@ -65,6 +65,7 @@ COPY extractors/naukri/package*.json ./extractors/naukri/
 COPY extractors/glints/package*.json ./extractors/glints/
 COPY extractors/kalibrr/package*.json ./extractors/kalibrr/
 COPY extractors/dealls/package*.json ./extractors/dealls/
+COPY extractors/techinasia/package*.json ./extractors/techinasia/
 COPY extractors/startupjobs/package*.json ./extractors/startupjobs/
 COPY extractors/workingnomads/package*.json ./extractors/workingnomads/
 COPY extractors/golangjobs/package*.json ./extractors/golangjobs/
@@ -96,6 +97,7 @@ COPY extractors/naukri ./extractors/naukri
 COPY extractors/glints ./extractors/glints
 COPY extractors/kalibrr ./extractors/kalibrr
 COPY extractors/dealls ./extractors/dealls
+COPY extractors/techinasia ./extractors/techinasia
 COPY extractors/startupjobs ./extractors/startupjobs
 COPY extractors/workingnomads ./extractors/workingnomads
 COPY extractors/golangjobs ./extractors/golangjobs
@@ -139,6 +141,7 @@ COPY extractors/naukri/package*.json ./extractors/naukri/
 COPY extractors/glints/package*.json ./extractors/glints/
 COPY extractors/kalibrr/package*.json ./extractors/kalibrr/
 COPY extractors/dealls/package*.json ./extractors/dealls/
+COPY extractors/techinasia/package*.json ./extractors/techinasia/
 COPY extractors/startupjobs/package*.json ./extractors/startupjobs/
 COPY extractors/workingnomads/package*.json ./extractors/workingnomads/
 COPY extractors/golangjobs/package*.json ./extractors/golangjobs/
@@ -199,6 +202,7 @@ COPY extractors/naukri ./extractors/naukri
 COPY extractors/glints ./extractors/glints
 COPY extractors/kalibrr ./extractors/kalibrr
 COPY extractors/dealls ./extractors/dealls
+COPY extractors/techinasia ./extractors/techinasia
 COPY extractors/startupjobs ./extractors/startupjobs
 COPY extractors/workingnomads ./extractors/workingnomads
 COPY extractors/golangjobs ./extractors/golangjobs

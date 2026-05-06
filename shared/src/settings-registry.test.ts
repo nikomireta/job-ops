@@ -190,6 +190,25 @@ describe("settingsRegistry helpers", () => {
       }
     });
 
+    it("uses env-backed defaults for techinasia per-term caps", () => {
+      const previousTechInAsiaMaxJobsPerTerm =
+        process.env.TECHINASIA_MAX_JOBS_PER_TERM;
+
+      process.env.TECHINASIA_MAX_JOBS_PER_TERM = "65";
+
+      try {
+        expect(settingsRegistry.techinasiaMaxJobsPerTerm.default()).toBe(65);
+        expect(settingsRegistry.techinasiaMaxJobsPerTerm.parse("25")).toBe(25);
+      } finally {
+        if (previousTechInAsiaMaxJobsPerTerm === undefined) {
+          delete process.env.TECHINASIA_MAX_JOBS_PER_TERM;
+        } else {
+          process.env.TECHINASIA_MAX_JOBS_PER_TERM =
+            previousTechInAsiaMaxJobsPerTerm;
+        }
+      }
+    });
+
     it("clamps backupHour to 0-23", () => {
       expect(settingsRegistry.backupHour.parse("25")).toBe(23);
       expect(settingsRegistry.backupHour.parse("-1")).toBe(0);

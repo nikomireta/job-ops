@@ -250,6 +250,13 @@ describe("location-domain", () => {
       supportedCountryKeys: ["indonesia"],
     });
     expect(
+      normalizeLocationSourceCapabilities({ source: "techinasia" }),
+    ).toEqual({
+      requiresCityLocations: false,
+      source: "techinasia",
+      supportedCountryKeys: ["indonesia"],
+    });
+    expect(
       normalizeLocationSourceCapabilities({ source: "startupjobs" }),
     ).toEqual({
       requiresCityLocations: false,

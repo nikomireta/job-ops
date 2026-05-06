@@ -25,6 +25,7 @@ Extractor integrations are now registered through manifests and loaded automatic
 | [Glints](/docs/next/extractors/glints) | Indonesia roles from Glints public marketplace | Indonesia-only; public browsing may hit Cloudflare challenges | existing pipeline `searchTerms`, selected country/cities, `GLINTS_MAX_JOBS_PER_TERM` / automatic run budget | Collects Explore page job links, enriches detail pages via JSON-LD when available, emits Indonesia location evidence, and de-duplicates by source id / URL |
 | [Kalibrr](/docs/next/extractors/kalibrr) | Indonesia roles from Kalibrr public job board | Indonesia-only; depends on the public JSON search endpoint staying available | existing pipeline `searchTerms`, selected country/cities, `KALIBRR_MAX_JOBS_PER_TERM` / automatic run budget | Fetches JSON result pages directly, filters to Indonesia from Google location country fields, maps descriptions/qualifications and apply redirect URLs, and de-duplicates by source id / URL |
 | [Dealls](/docs/next/extractors/dealls) | Indonesia roles from Dealls public job board | Indonesia-only; depends on `api.sejutacita.id` staying available | existing pipeline `searchTerms`, selected country/cities, `DEALLS_MAX_JOBS_PER_TERM` / automatic run budget | Fetches JSON result pages directly, enriches detail payloads, filters to Indonesia from country fields, and de-duplicates by source id / URL |
+| [Tech in Asia](/docs/next/extractors/techinasia) | Indonesia tech and startup roles from Tech in Asia Jobs | Indonesia-only; depends on the public Algolia `job_postings` index staying available | existing pipeline `searchTerms`, selected country/cities, `TECHINASIA_MAX_JOBS_PER_TERM` / automatic run budget | Queries Algolia directly, maps full listing payloads including salary, location, company, skills, and descriptions, and de-duplicates by source id / URL |
 | [UKVisaJobs](/docs/next/extractors/ukvisajobs) | UK visa sponsorship-focused roles | Requires authenticated session and periodic token/cookie refresh | `UKVISAJOBS_EMAIL`, `UKVISAJOBS_PASSWORD`, `UKVISAJOBS_MAX_JOBS`, `UKVISAJOBS_SEARCH_KEYWORD` | API pagination + dataset output; orchestrator de-dupes and may fetch missing descriptions |
 | [Manual Import](/docs/next/extractors/manual) | One-off jobs not covered by scrapers | Inference quality depends on model/provider and input quality; some URLs cannot be fetched reliably | App/API endpoints (`/api/manual-jobs/infer`, `/api/manual-jobs/import`) | Accepts text/HTML/URL, runs inference, then saves and scores job after review |
 
@@ -41,6 +42,7 @@ Extractor integrations are now registered through manifests and loaded automatic
 - Use **Glints** when targeting Indonesia roles from the local Glints marketplace.
 - Use **Kalibrr** when targeting Indonesia roles from Kalibrr's local public board.
 - Use **Dealls** when targeting Indonesia startup and technology roles from Dealls.
+- Use **Tech in Asia** when targeting Indonesia tech and startup roles from Tech in Asia Jobs.
 - Use **Gradcracker** when targeting graduate pipelines in the UK.
 - Use **UKVisaJobs** for sponsorship-specific UK searches.
 - Use **Manual Import** when you already have a specific posting and need direct import.
@@ -72,6 +74,7 @@ Many runs combine sources: broad discovery first, then manual import for high-pr
 - [Glints](/docs/next/extractors/glints)
 - [Kalibrr](/docs/next/extractors/kalibrr)
 - [Dealls](/docs/next/extractors/dealls)
+- [Tech in Asia](/docs/next/extractors/techinasia)
 - [UKVisaJobs](/docs/next/extractors/ukvisajobs)
 - [Manual Import](/docs/next/extractors/manual)
 - [Add an Extractor](/docs/next/workflows/add-an-extractor)

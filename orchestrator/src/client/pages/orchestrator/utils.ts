@@ -249,6 +249,10 @@ export const getEnabledSources = (
       enabled.push(source);
       continue;
     }
+    if (source === "techinasia") {
+      enabled.push(source);
+      continue;
+    }
     if (source === "hiringcafe") {
       enabled.push(source);
       continue;

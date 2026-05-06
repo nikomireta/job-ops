@@ -950,6 +950,7 @@ describe("OrchestratorPage", () => {
         glintsMaxJobsPerTerm: 150,
         kalibrrMaxJobsPerTerm: 150,
         deallsMaxJobsPerTerm: 150,
+        techinasiaMaxJobsPerTerm: 150,
         jobspyCountryIndeed: "united kingdom",
         searchCities: null,
         locationSearchScope: "selected_only",

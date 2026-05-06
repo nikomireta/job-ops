@@ -314,6 +314,7 @@ function createDefaultSupportedCountryKeys(
     case "glints":
     case "kalibrr":
     case "dealls":
+    case "techinasia":
       return ["indonesia"];
     case "jobindex":
       return ["denmark"];

@@ -57,4 +57,12 @@ describe("extractor source catalog", () => {
       category: "pipeline",
     });
   });
+
+  it("includes techinasia as a pipeline source", () => {
+    expect(isExtractorSourceId("techinasia")).toBe(true);
+    expect(EXTRACTOR_SOURCE_METADATA.techinasia).toMatchObject({
+      label: "Tech in Asia",
+      category: "pipeline",
+    });
+  });
 });

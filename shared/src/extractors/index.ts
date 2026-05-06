@@ -17,6 +17,7 @@ export const EXTRACTOR_SOURCE_IDS = [
   "glints",
   "kalibrr",
   "dealls",
+  "techinasia",
   "manual",
 ] as const;
 
@@ -97,6 +98,11 @@ export const EXTRACTOR_SOURCE_METADATA: Record<
   dealls: {
     label: "Dealls",
     order: 109.5,
+    category: "pipeline",
+  },
+  techinasia: {
+    label: "Tech in Asia",
+    order: 109.75,
     category: "pipeline",
   },
   manual: { label: "Manual", order: 110, category: "manual" },

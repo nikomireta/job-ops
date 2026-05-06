@@ -106,6 +106,7 @@ describe("OverviewPipelineRunsSection", () => {
             glintsMaxJobsPerTerm: 50,
             kalibrrMaxJobsPerTerm: 50,
             deallsMaxJobsPerTerm: 50,
+            techinasiaMaxJobsPerTerm: 50,
             jobspyResultsWanted: 20,
           },
           autoSkipScoreThreshold: 60,
