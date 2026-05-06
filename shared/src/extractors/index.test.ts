@@ -49,4 +49,12 @@ describe("extractor source catalog", () => {
       category: "pipeline",
     });
   });
+
+  it("includes dealls as a pipeline source", () => {
+    expect(isExtractorSourceId("dealls")).toBe(true);
+    expect(EXTRACTOR_SOURCE_METADATA.dealls).toMatchObject({
+      label: "Dealls",
+      category: "pipeline",
+    });
+  });
 });

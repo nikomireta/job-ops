@@ -151,6 +151,7 @@ export interface ExtractorLimits {
   naukriMaxJobsPerTerm: number;
   glintsMaxJobsPerTerm: number;
   kalibrrMaxJobsPerTerm: number;
+  deallsMaxJobsPerTerm: number;
 }
 
 export function inferAutomaticPresetSelection(args: {
@@ -210,6 +211,7 @@ export function deriveExtractorLimits(args: {
   const includesNaukri = args.sources.includes("naukri");
   const includesGlints = args.sources.includes("glints");
   const includesKalibrr = args.sources.includes("kalibrr");
+  const includesDealls = args.sources.includes("dealls");
 
   const weightedContributors =
     (includesIndeed ? termCount : 0) +
@@ -225,7 +227,8 @@ export function deriveExtractorLimits(args: {
     (includesSeek ? termCount : 0) +
     (includesNaukri ? termCount : 0) +
     (includesGlints ? termCount : 0) +
-    (includesKalibrr ? termCount : 0);
+    (includesKalibrr ? termCount : 0) +
+    (includesDealls ? termCount : 0);
 
   if (weightedContributors <= 0) {
     return {
@@ -240,6 +243,7 @@ export function deriveExtractorLimits(args: {
       naukriMaxJobsPerTerm: budget,
       glintsMaxJobsPerTerm: budget,
       kalibrrMaxJobsPerTerm: budget,
+      deallsMaxJobsPerTerm: budget,
     };
   }
 
@@ -258,6 +262,7 @@ export function deriveExtractorLimits(args: {
     naukriMaxJobsPerTerm: perUnit,
     glintsMaxJobsPerTerm: perUnit,
     kalibrrMaxJobsPerTerm: perUnit,
+    deallsMaxJobsPerTerm: perUnit,
   };
 }
 
@@ -348,6 +353,7 @@ export function calculateAutomaticEstimate(args: {
   const hasNaukri = sources.includes("naukri");
   const hasGlints = sources.includes("glints");
   const hasKalibrr = sources.includes("kalibrr");
+  const hasDealls = sources.includes("dealls");
   const limits = deriveExtractorLimits({
     budget: values.runBudget,
     searchTerms: values.searchTerms,
@@ -379,6 +385,7 @@ export function calculateAutomaticEstimate(args: {
   const naukriCap = hasNaukri ? limits.naukriMaxJobsPerTerm * termCount : 0;
   const glintsCap = hasGlints ? limits.glintsMaxJobsPerTerm * termCount : 0;
   const kalibrrCap = hasKalibrr ? limits.kalibrrMaxJobsPerTerm * termCount : 0;
+  const deallsCap = hasDealls ? limits.deallsMaxJobsPerTerm * termCount : 0;
 
   const discoveredCap =
     jobspyCap +
@@ -392,7 +399,8 @@ export function calculateAutomaticEstimate(args: {
     seekCap +
     naukriCap +
     glintsCap +
-    kalibrrCap;
+    kalibrrCap +
+    deallsCap;
   const discoveredMin = Math.round(discoveredCap * 0.35);
   const discoveredMax = Math.round(discoveredCap * 0.75);
   const processedMin = Math.min(values.topN, discoveredMin);

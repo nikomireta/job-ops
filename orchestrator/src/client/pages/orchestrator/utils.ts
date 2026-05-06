@@ -245,6 +245,10 @@ export const getEnabledSources = (
       enabled.push(source);
       continue;
     }
+    if (source === "dealls") {
+      enabled.push(source);
+      continue;
+    }
     if (source === "hiringcafe") {
       enabled.push(source);
       continue;

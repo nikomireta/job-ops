@@ -110,6 +110,9 @@ const GLINTS_SUPPORTED_COUNTRIES = new Set(
 const KALIBRR_SUPPORTED_COUNTRIES = new Set(
   ["indonesia"].map(normalizeCountryKey),
 );
+const DEALLS_SUPPORTED_COUNTRIES = new Set(
+  ["indonesia"].map(normalizeCountryKey),
+);
 const JOBINDEX_SUPPORTED_COUNTRIES = new Set(
   ["denmark"].map(normalizeCountryKey),
 );
@@ -208,6 +211,8 @@ export function isSourceAllowedForCountry(
     return GLINTS_SUPPORTED_COUNTRIES.has(normalizeCountryKey(country));
   if (source === "kalibrr")
     return KALIBRR_SUPPORTED_COUNTRIES.has(normalizeCountryKey(country));
+  if (source === "dealls")
+    return DEALLS_SUPPORTED_COUNTRIES.has(normalizeCountryKey(country));
   if (source === "jobindex")
     return JOBINDEX_SUPPORTED_COUNTRIES.has(normalizeCountryKey(country));
   if (source === "glassdoor") return isGlassdoorCountry(country);

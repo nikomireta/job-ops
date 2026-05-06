@@ -24,6 +24,7 @@ Extractor integrations are now registered through manifests and loaded automatic
 | [Seek](/docs/next/extractors/seek) | Australia/NZ job search via Apify | Requires Apify API token; actor runs incur cost ($1.50/1,000 results; free tier ~3,000/month) | `APIFY_TOKEN`, `SEEK_MAX_JOBS_PER_TERM`, `SEEK_APIFY_ACTOR_ID` | Calls the `unfenced-group/seek-com-au-scraper` Apify actor per term, maps results, and de-duplicates by source id / URL |
 | [Glints](/docs/next/extractors/glints) | Indonesia roles from Glints public marketplace | Indonesia-only; public browsing may hit Cloudflare challenges | existing pipeline `searchTerms`, selected country/cities, `GLINTS_MAX_JOBS_PER_TERM` / automatic run budget | Collects Explore page job links, enriches detail pages via JSON-LD when available, emits Indonesia location evidence, and de-duplicates by source id / URL |
 | [Kalibrr](/docs/next/extractors/kalibrr) | Indonesia roles from Kalibrr public job board | Indonesia-only; depends on the public JSON search endpoint staying available | existing pipeline `searchTerms`, selected country/cities, `KALIBRR_MAX_JOBS_PER_TERM` / automatic run budget | Fetches JSON result pages directly, filters to Indonesia from Google location country fields, maps descriptions/qualifications and apply redirect URLs, and de-duplicates by source id / URL |
+| [Dealls](/docs/next/extractors/dealls) | Indonesia roles from Dealls public job board | Indonesia-only; depends on `api.sejutacita.id` staying available | existing pipeline `searchTerms`, selected country/cities, `DEALLS_MAX_JOBS_PER_TERM` / automatic run budget | Fetches JSON result pages directly, enriches detail payloads, filters to Indonesia from country fields, and de-duplicates by source id / URL |
 | [UKVisaJobs](/docs/next/extractors/ukvisajobs) | UK visa sponsorship-focused roles | Requires authenticated session and periodic token/cookie refresh | `UKVISAJOBS_EMAIL`, `UKVISAJOBS_PASSWORD`, `UKVISAJOBS_MAX_JOBS`, `UKVISAJOBS_SEARCH_KEYWORD` | API pagination + dataset output; orchestrator de-dupes and may fetch missing descriptions |
 | [Manual Import](/docs/next/extractors/manual) | One-off jobs not covered by scrapers | Inference quality depends on model/provider and input quality; some URLs cannot be fetched reliably | App/API endpoints (`/api/manual-jobs/infer`, `/api/manual-jobs/import`) | Accepts text/HTML/URL, runs inference, then saves and scores job after review |
 
@@ -39,6 +40,7 @@ Extractor integrations are now registered through manifests and loaded automatic
 - Use **Seek** when targeting Australia/NZ roles via the Apify-powered Seek scraper.
 - Use **Glints** when targeting Indonesia roles from the local Glints marketplace.
 - Use **Kalibrr** when targeting Indonesia roles from Kalibrr's local public board.
+- Use **Dealls** when targeting Indonesia startup and technology roles from Dealls.
 - Use **Gradcracker** when targeting graduate pipelines in the UK.
 - Use **UKVisaJobs** for sponsorship-specific UK searches.
 - Use **Manual Import** when you already have a specific posting and need direct import.
@@ -69,6 +71,7 @@ Many runs combine sources: broad discovery first, then manual import for high-pr
 - [Seek](/docs/next/extractors/seek)
 - [Glints](/docs/next/extractors/glints)
 - [Kalibrr](/docs/next/extractors/kalibrr)
+- [Dealls](/docs/next/extractors/dealls)
 - [UKVisaJobs](/docs/next/extractors/ukvisajobs)
 - [Manual Import](/docs/next/extractors/manual)
 - [Add an Extractor](/docs/next/workflows/add-an-extractor)

@@ -52,6 +52,10 @@ describe("orchestrator utils", () => {
     expect(getEnabledSources(createAppSettings())).toContain("kalibrr");
   });
 
+  it("enables dealls without credentials", () => {
+    expect(getEnabledSources(createAppSettings())).toContain("dealls");
+  });
+
   it("counts processing jobs in ready and discovered tabs", () => {
     const jobs = [
       createJob({ id: "ready", status: "ready", closedAt: null }),

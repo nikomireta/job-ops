@@ -141,6 +141,13 @@ const HEALTH_PROBE_CONFIG_BY_SOURCE: Record<
       kalibrrMaxJobsPerTerm: "1",
     },
   },
+  dealls: {
+    searchTerm: DEFAULT_HEALTH_SEARCH_TERM,
+    selectedCountry: "indonesia",
+    settings: {
+      deallsMaxJobsPerTerm: "1",
+    },
+  },
   manual: {
     searchTerm: DEFAULT_HEALTH_SEARCH_TERM,
     selectedCountry: DEFAULT_HEALTH_SELECTED_COUNTRY,

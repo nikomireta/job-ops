@@ -173,6 +173,23 @@ describe("settingsRegistry helpers", () => {
       }
     });
 
+    it("uses env-backed defaults for dealls per-term caps", () => {
+      const previousDeallsMaxJobsPerTerm = process.env.DEALLS_MAX_JOBS_PER_TERM;
+
+      process.env.DEALLS_MAX_JOBS_PER_TERM = "65";
+
+      try {
+        expect(settingsRegistry.deallsMaxJobsPerTerm.default()).toBe(65);
+        expect(settingsRegistry.deallsMaxJobsPerTerm.parse("25")).toBe(25);
+      } finally {
+        if (previousDeallsMaxJobsPerTerm === undefined) {
+          delete process.env.DEALLS_MAX_JOBS_PER_TERM;
+        } else {
+          process.env.DEALLS_MAX_JOBS_PER_TERM = previousDeallsMaxJobsPerTerm;
+        }
+      }
+    });
+
     it("clamps backupHour to 0-23", () => {
       expect(settingsRegistry.backupHour.parse("25")).toBe(23);
       expect(settingsRegistry.backupHour.parse("-1")).toBe(0);

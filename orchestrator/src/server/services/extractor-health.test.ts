@@ -82,6 +82,43 @@ describe("extractor health service", () => {
     );
   });
 
+  it("uses Indonesia and the Dealls source limit for Dealls health probes", async () => {
+    const run = vi.fn().mockResolvedValue({
+      success: true,
+      jobs: [
+        {
+          source: "dealls",
+          title: "Software Engineer",
+          employer: "Acme",
+          jobUrl: "https://dealls.com/loker/software-engineer~acme",
+        },
+      ],
+    });
+    const manifest: ExtractorManifest = {
+      id: "dealls",
+      displayName: "Dealls",
+      providesSources: ["dealls"],
+      run,
+    };
+    mockGetExtractorRegistry.mockResolvedValue(createRegistry([manifest]));
+
+    const module = await import("./extractor-health");
+    const result = await module.checkExtractorHealth("dealls");
+
+    expect(result?.healthy).toBe(true);
+    expect(run).toHaveBeenCalledWith(
+      expect.objectContaining({
+        source: "dealls",
+        selectedSources: ["dealls"],
+        searchTerms: ["software"],
+        selectedCountry: "indonesia",
+        settings: expect.objectContaining({
+          deallsMaxJobsPerTerm: "1",
+        }),
+      }),
+    );
+  });
+
   it("expires cached results after one hour", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-03-31T10:00:00.000Z"));

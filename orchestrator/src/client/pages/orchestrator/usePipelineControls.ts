@@ -204,6 +204,7 @@ export function usePipelineControls(
         naukriMaxJobsPerTerm: limits.naukriMaxJobsPerTerm,
         glintsMaxJobsPerTerm: limits.glintsMaxJobsPerTerm,
         kalibrrMaxJobsPerTerm: limits.kalibrrMaxJobsPerTerm,
+        deallsMaxJobsPerTerm: limits.deallsMaxJobsPerTerm,
         jobspyCountryIndeed: values.country,
         searchCities,
       });

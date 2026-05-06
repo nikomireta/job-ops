@@ -244,6 +244,11 @@ describe("location-domain", () => {
       source: "kalibrr",
       supportedCountryKeys: ["indonesia"],
     });
+    expect(normalizeLocationSourceCapabilities({ source: "dealls" })).toEqual({
+      requiresCityLocations: false,
+      source: "dealls",
+      supportedCountryKeys: ["indonesia"],
+    });
     expect(
       normalizeLocationSourceCapabilities({ source: "startupjobs" }),
     ).toEqual({

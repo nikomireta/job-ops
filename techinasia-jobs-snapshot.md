@@ -1,0 +1,261 @@
+- generic [ref=e3] [box=0,0,780,1823]:
+  - banner [ref=e5] [box=0,0,780,60]:
+    - generic [ref=e6] [box=0,0,780,60]:
+      - link "Tech in Asia" [ref=e8] [cursor=pointer] [box=0,0,78,60]:
+        - /url: /jobs/search
+        - img [ref=e9] [box=18,19,36,25]
+        - img "Tech in Asia" [box=60,0,101,14]
+      - navigation [ref=e12] [box=78,0,702,60]:
+        - list [ref=e13] [box=78,0,534,60]:
+          - listitem [ref=e14] [box=78,0,64,60]:
+            - link "News" [ref=e15] [cursor=pointer] [box=78,0,64,60]:
+              - /url: /
+          - listitem [ref=e16] [box=142,0,59,60]:
+            - link "Jobs" [ref=e17] [cursor=pointer] [box=142,0,59,60]:
+              - /url: /jobs/search
+          - listitem [ref=e18] [box=200,0,106,60]:
+            - link "Companies" [ref=e19] [cursor=pointer] [box=200,0,106,60]:
+              - /url: /companies
+          - listitem [ref=e20] [box=306,0,77,60]:
+            - link "Events" [ref=e21] [cursor=pointer] [box=306,0,77,60]:
+              - /url: /events/live
+          - listitem [ref=e22] [box=383,0,72,60]:
+            - link "About" [ref=e23] [cursor=pointer] [box=383,0,72,60]:
+              - /url: /about
+          - listitem [ref=e24] [box=455,0,100,60]:
+            - link "advertise" [ref=e25] [cursor=pointer] [box=455,0,100,60]:
+              - /url: /advertise?utm_source=techinasia.com&utm_medium=website&utm_campaign=intl-navbar
+          - listitem [ref=e26] [box=78,60,215,60]:
+            - link "Asia Economic Summit" [ref=e27] [cursor=pointer] [box=78,60,215,60]:
+              - /url: https://aes.techinasia.com/?utm_source=navbar-tia-homepage&utm_medium=website&utm_campaign=events-flagship-aes
+        - generic [ref=e29] [box=612,0,168,60]:
+          - list [ref=e30] [box=612,0,152,60]:
+            - listitem [ref=e31] [box=612,0,80,60]
+            - listitem [ref=e33] [box=692,0,72,60]
+          - generic [ref=e35] [box=612,60,66,60]:
+            - link "toggle search" [ref=e36] [cursor=pointer] [box=612,60,48,60]:
+              - /url: /search
+            - list [box=660,60,18,0]
+  - list [ref=e41] [box=0,60,780,60]:
+    - listitem [ref=e42] [box=0,60,121,60]:
+      - link "Browse Jobs" [ref=e43] [cursor=pointer] [box=18,60,97,60]:
+        - /url: /jobs/search?ref=nav
+    - listitem [ref=e44] [box=121,60,115,60]:
+      - generic [ref=e46] [cursor=pointer] [box=139,60,91,60]:
+        - generic [box=139,83,91,13]:
+          - text: Discover
+          - img [box=214,82,16,16]
+    - listitem [ref=e47] [box=236,60,129,60]:
+      - link "Why TIA Jobs?" [ref=e48] [cursor=pointer] [box=254,60,105,60]:
+        - /url: /jobs?ref=why-tia-jobs
+    - listitem [ref=e49] [box=365,60,75,60]:
+      - generic [ref=e51] [cursor=pointer] [box=383,60,51,60]:
+        - generic [box=383,83,51,13]:
+          - text: Tips
+          - img [box=417,82,16,16]
+    - listitem [ref=e52] [box=439,60,341,60]:
+      - generic [ref=e54] [box=499,66,275,48]:
+        - button "💼 Jobseekers" [ref=e56] [cursor=pointer] [box=505,72,131,36]:
+          - generic [ref=e57] [box=517,80,19,20]: 💼
+          - text: Jobseekers
+        - link "🏢 Employers" [ref=e59] [cursor=pointer] [box=643,72,125,36]:
+          - /url: /jobs/employers
+          - button "🏢 Employers" [ref=e60] [box=643,72,125,36]:
+            - generic [ref=e61] [box=655,80,19,20]: 🏢
+            - text: Employers
+  - generic [ref=e64] [box=0,120,780,1423]:
+    - generic [ref=e71] [box=18,144,744,21]:
+      - generic [ref=e72] [box=18,146,724,17]: Add your resume to start getting potential job offers!
+      - img [ref=e74] [cursor=pointer] [box=742,145,20,20]
+    - generic [ref=e76] [box=0,189,780,140]:
+      - generic [ref=e79] [box=18,209,744,56]:
+        - generic [ref=e81] [box=18,209,500,56]:
+          - textbox "Search job titles, companies, or job functions" [ref=e82] [box=31,226,430,23]
+          - button [ref=e83] [cursor=pointer] [box=469,219,36,36]:
+            - img [ref=e84] [box=478,229,18,18]
+        - button "Location 1" [ref=e87] [cursor=pointer] [box=530,209,135,56]:
+          - img [ref=e88] [box=543,227,20,20]
+          - generic [ref=e90] [box=567,218,57,37]: Location
+          - generic [ref=e92] [box=639,231,6,12]: "1"
+        - button "Filter" [ref=e93] [cursor=pointer] [box=677,209,85,56]:
+          - img [ref=e94] [box=690,227,20,20]
+          - generic [ref=e96] [box=714,218,35,37]: Filter
+      - generic [ref=e99] [box=18,281,744,32]:
+        - generic [ref=e102] [cursor=pointer] [box=18,281,124,32]:
+          - button "📍️ Indonesia" [ref=e103] [box=26,289,86,16]:
+            - generic [ref=e104] [box=26,289,18,16]: 📍️
+            - text: Indonesia
+          - button [ref=e105] [box=120,290,14,14]:
+            - img [ref=e106] [box=120,290,14,14]
+        - generic [ref=e108] [cursor=pointer] [box=720,285,42,24]: Reset
+    - generic [ref=e110] [box=0,345,780,1182]:
+      - generic [ref=e111] [box=18,345,744,20]:
+        - generic [ref=e112] [box=18,345,124,20]: Showing 311 results
+        - generic [ref=e113] [box=623,345,139,20]: "Sorted by: Most recent"
+      - generic [ref=e115] [box=18,364,744,1162]:
+        - generic [ref=e116] [box=18,384,240,409]:
+          - generic [ref=e117] [box=35,401,206,250]:
+            - generic [ref=e118] [box=35,401,206,152]
+            - generic [ref=e128] [box=35,566,206,86]
+          - generic [ref=e145] [box=35,685,206,92]:
+            - generic [ref=e146] [box=35,698,206,44]
+            - generic [ref=e148] [box=35,750,206,27]
+        - generic [ref=e155] [box=270,384,240,409]:
+          - generic [ref=e156] [box=287,401,206,277]:
+            - generic [ref=e157] [box=287,401,206,179]
+            - generic [ref=e167] [box=287,593,206,86]
+          - generic [ref=e184] [box=287,691,206,86]:
+            - generic [ref=e185] [box=287,704,206,44]
+            - generic [ref=e189] [box=295,758,87,17]: Data & Analytics
+        - generic [ref=e190] [box=522,384,240,409]:
+          - generic [ref=e191] [box=539,401,206,188]:
+            - generic [ref=e192] [box=539,401,206,113]
+            - generic [ref=e202] [box=539,527,206,63]
+          - generic [ref=e215] [box=539,713,206,64]:
+            - generic [ref=e216] [box=539,726,206,22]
+            - generic [ref=e220] [box=547,758,87,17]: Data & Analytics
+        - generic [ref=e221] [box=18,805,240,378]:
+          - generic [ref=e222] [box=35,822,206,227]:
+            - generic [ref=e223] [box=35,822,206,129]
+            - generic [ref=e233] [box=35,963,206,86]
+          - generic [ref=e250] [box=35,1081,206,86]:
+            - generic [ref=e251] [box=35,1094,206,44]
+            - generic [ref=e255] [box=43,1148,62,17]: IT Engineer
+        - generic [ref=e256] [box=270,805,240,378]:
+          - generic [ref=e257] [box=287,822,206,227]:
+            - generic [ref=e258] [box=287,822,206,152]
+            - generic [ref=e268] [box=287,987,206,63]
+          - generic [ref=e281] [box=287,1081,206,86]:
+            - generic [ref=e282] [box=287,1094,206,44]
+            - generic [ref=e286] [box=295,1148,105,17]: Media & Journalism
+        - generic [ref=e287] [box=522,805,240,378]:
+          - generic [ref=e288] [box=539,822,206,246]:
+            - generic [ref=e289] [box=539,822,206,148]
+            - generic [ref=e299] [box=539,983,206,86]
+          - generic [ref=e316] [box=539,1081,206,86]:
+            - generic [ref=e317] [box=539,1094,206,44]
+            - generic [ref=e321] [box=547,1148,98,17]: Human Resources
+        - generic [ref=e322] [box=18,1195,240,311]:
+          - generic [ref=e323] [box=35,1212,206,145]:
+            - generic [ref=e324] [box=35,1212,206,70]
+            - generic [ref=e334] [box=35,1294,206,63]
+          - generic [ref=e347] [box=35,1404,206,86]:
+            - generic [ref=e348] [box=35,1417,206,44]
+            - generic [ref=e352] [box=43,1471,87,17]: Data & Analytics
+        - generic [ref=e353] [box=270,1195,240,311]:
+          - generic [ref=e354] [box=287,1212,206,168]:
+            - generic [ref=e355] [box=287,1212,206,94]
+            - generic [ref=e365] [box=287,1318,206,63]
+          - generic [ref=e378] [box=287,1404,206,86]:
+            - generic [ref=e379] [box=287,1417,206,44]
+            - generic [ref=e383] [box=295,1471,165,17]: Project & Product Management
+        - generic [ref=e384] [box=522,1195,240,311]:
+          - generic [ref=e385] [box=539,1212,206,180]:
+            - generic [ref=e386] [box=539,1212,206,105]
+            - generic [ref=e396] [box=539,1330,206,63]
+          - generic [ref=e409] [box=539,1404,206,86]:
+            - generic [ref=e410] [box=539,1417,206,44]
+            - generic [ref=e414] [box=547,1471,116,17]: Strategy & Consulting
+  - contentinfo [ref=e415] [box=0,1543,780,280]:
+    - generic [ref=e417] [box=0,1543,780,207]:
+      - generic [ref=e418] [box=18,1591,186,111]:
+        - img [ref=e419] [box=18,1591,36,25]
+        - img "Tech in Asia" [ref=e421] [box=54,1596,101,14]
+        - generic [ref=e423] [box=18,1626,186,30]:
+          - text: A member of
+          - link "The Business Times." [ref=e424] [cursor=pointer] [box=18,1626,154,29]:
+            - /url: https://www.businesstimes.com.sg
+      - generic [ref=e425] [box=204,1591,558,111]:
+        - list [ref=e426] [box=204,1591,112,111]:
+          - listitem [ref=e427] [box=204,1591,112,15]:
+            - link "About" [ref=e428] [cursor=pointer] [box=204,1591,36,14]:
+              - /url: /about
+          - listitem [ref=e429] [box=204,1618,112,15]:
+            - link "Our Culture" [ref=e430] [cursor=pointer] [box=204,1618,69,14]:
+              - /url: /about/culture
+          - listitem [ref=e431] [box=204,1644,112,15]:
+            - link "Join Us" [ref=e432] [cursor=pointer] [box=204,1644,42,14]:
+              - /url: /companies/tech-in-asia
+          - listitem [ref=e433] [box=204,1671,112,15]:
+            - link "Advertise" [ref=e434] [cursor=pointer] [box=204,1671,56,14]:
+              - /url: /advertise?utm_source=techinasia.com&utm_medium=website&utm_campaign=intl-footer
+        - list [ref=e435] [box=316,1591,112,111]:
+          - listitem [ref=e436] [box=316,1591,112,15]:
+            - link "Subscribe" [ref=e437] [cursor=pointer] [box=316,1591,56,14]:
+              - /url: /subscription?ref=footer
+          - listitem [ref=e438] [box=316,1618,112,15]:
+            - link "Events" [ref=e439] [cursor=pointer] [box=316,1618,39,14]:
+              - /url: /events/live
+          - listitem [ref=e440] [box=316,1644,112,15]:
+            - link "Jobs" [ref=e441] [cursor=pointer] [box=316,1644,27,14]:
+              - /url: /jobs
+          - listitem [ref=e442] [box=316,1671,112,15]:
+            - link "Database" [ref=e443] [cursor=pointer] [box=316,1671,55,14]:
+              - /url: /companies
+        - list [ref=e444] [box=427,1591,112,111]:
+          - listitem [ref=e445] [box=427,1591,112,15]:
+            - link "Glasswall" [ref=e446] [cursor=pointer] [box=427,1591,54,14]:
+              - /url: /companies/investors?reviews=true
+          - listitem [ref=e447] [box=427,1618,112,15]:
+            - link "Wall of Love" [ref=e448] [cursor=pointer] [box=427,1618,71,14]:
+              - /url: /wall-of-love?ref=footer
+          - listitem [ref=e449] [box=427,1644,112,15]:
+            - link "Ethics" [ref=e450] [cursor=pointer] [box=427,1644,35,14]:
+              - /url: /about/ethics
+          - listitem [ref=e451] [box=427,1671,112,15]:
+            - link "Climate" [ref=e452] [cursor=pointer] [box=427,1671,45,14]:
+              - /url: /about/climate
+        - list [ref=e453] [box=539,1591,112,111]:
+          - listitem [ref=e454] [box=539,1591,112,15]:
+            - link "Top Stories" [ref=e455] [cursor=pointer] [box=539,1591,65,14]:
+              - /url: /category/top
+          - listitem [ref=e456] [box=539,1618,112,15]:
+            - link "Mobile App" [ref=e457] [cursor=pointer] [box=539,1618,67,14]:
+              - /url: /about/app
+          - listitem [ref=e458] [box=539,1644,112,15]:
+            - link "Newsletter" [ref=e459] [cursor=pointer] [box=539,1644,65,14]:
+              - /url: /about/get-updates
+          - listitem [ref=e460] [box=539,1671,112,15]:
+            - link "Terms of Use" [ref=e461] [cursor=pointer] [box=539,1671,76,14]:
+              - /url: /about/terms
+        - list [ref=e462] [box=650,1591,112,111]:
+          - listitem [ref=e463] [box=650,1591,112,15]:
+            - link "Search" [ref=e464] [cursor=pointer] [box=650,1591,39,14]:
+              - /url: /search
+          - listitem [ref=e465] [box=650,1618,112,15]:
+            - link "Privacy Policy" [ref=e466] [cursor=pointer] [box=650,1618,79,14]:
+              - /url: /about/privacy-policy
+          - listitem [ref=e467] [box=650,1644,112,15]:
+            - link "Contact Us" [ref=e468] [cursor=pointer] [box=650,1644,63,14]:
+              - /url: /about#contact
+          - listitem [ref=e469] [box=650,1671,112,30]:
+            - link "Tech in Asia Indonesia" [ref=e470] [cursor=pointer] [box=650,1671,68,29]:
+              - /url: https://id.techinasia.com?ref=intl-footer
+    - generic [ref=e472] [box=0,1749,780,73]:
+      - generic [ref=e474] [box=18,1778,238,14]:
+        - link "Facebook" [ref=e475] [cursor=pointer] [box=18,1778,16,14]:
+          - /url: https://www.facebook.com/techinasia/
+          - img "Facebook" [ref=e476] [box=18,1778,16,16]
+        - link "LinkedIn" [ref=e478] [cursor=pointer] [box=52,1778,16,14]:
+          - /url: https://linkedin.com/company/tech-in-asia
+          - img "LinkedIn" [ref=e479] [box=52,1778,16,16]
+        - link "Twitter" [ref=e481] [cursor=pointer] [box=86,1778,16,14]:
+          - /url: https://twitter.com/techinasia
+          - img "Twitter" [ref=e482] [box=86,1778,16,16]
+        - link "YouTube" [ref=e484] [cursor=pointer] [box=120,1778,16,14]:
+          - /url: https://www.youtube.com/user/TechinAsia
+          - img "YouTube" [ref=e485] [box=120,1778,16,16]
+        - link "Instagram" [ref=e487] [cursor=pointer] [box=154,1778,16,14]:
+          - /url: https://www.instagram.com/techinasia/
+          - img "Instagram" [ref=e488] [box=154,1778,16,16]
+        - link "Feed" [ref=e490] [cursor=pointer] [box=188,1778,16,14]:
+          - /url: https://feeds.feedburner.com/techinasia
+          - img "Feed" [ref=e491] [box=188,1778,16,16]
+        - link "Telegram" [ref=e493] [cursor=pointer] [box=222,1778,16,14]:
+          - /url: https://t.me/techinasiaofficial
+          - img "Telegram" [ref=e494] [box=222,1778,16,16]
+      - paragraph [ref=e496] [box=267,1774,495,23]:
+        - text: A member of
+        - link "The Business Times." [ref=e497] [cursor=pointer] [box=347,1778,116,14]:
+          - /url: https://www.businesstimes.com.sg
+        - text: Copyright © 2026 Tech in Asia. All Rights Reserved.
