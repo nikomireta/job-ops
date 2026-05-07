@@ -176,6 +176,7 @@ export interface AppSettings {
   kalibrrMaxJobsPerTerm: Resolved<number>;
   deallsMaxJobsPerTerm: Resolved<number>;
   techinasiaMaxJobsPerTerm: Resolved<number>;
+  jobstreetMaxJobsPerTerm: Resolved<number>;
   jobindexMaxJobsPerTerm: Resolved<number>;
   searchTerms: Resolved<string[]>;
   workplaceTypes: Resolved<Array<"remote" | "hybrid" | "onsite">>;

@@ -18,6 +18,7 @@ export const EXTRACTOR_SOURCE_IDS = [
   "kalibrr",
   "dealls",
   "techinasia",
+  "jobstreet",
   "manual",
 ] as const;
 
@@ -103,6 +104,11 @@ export const EXTRACTOR_SOURCE_METADATA: Record<
   techinasia: {
     label: "Tech in Asia",
     order: 109.75,
+    category: "pipeline",
+  },
+  jobstreet: {
+    label: "JobStreet",
+    order: 109.875,
     category: "pipeline",
   },
   manual: { label: "Manual", order: 110, category: "manual" },

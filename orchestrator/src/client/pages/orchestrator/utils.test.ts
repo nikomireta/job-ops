@@ -60,6 +60,10 @@ describe("orchestrator utils", () => {
     expect(getEnabledSources(createAppSettings())).toContain("techinasia");
   });
 
+  it("enables jobstreet without credentials", () => {
+    expect(getEnabledSources(createAppSettings())).toContain("jobstreet");
+  });
+
   it("counts processing jobs in ready and discovered tabs", () => {
     const jobs = [
       createJob({ id: "ready", status: "ready", closedAt: null }),

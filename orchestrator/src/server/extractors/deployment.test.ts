@@ -75,6 +75,19 @@ describe("extractor deployment config", () => {
     );
   });
 
+  it("ships the JobStreet extractor in Docker runtime images", async () => {
+    const dockerfile = await readFile(resolve(process.cwd(), "../Dockerfile"), {
+      encoding: "utf8",
+    });
+
+    expect(dockerfile).toContain(
+      "COPY extractors/jobstreet/package*.json ./extractors/jobstreet/",
+    );
+    expect(dockerfile).toContain(
+      "COPY extractors/jobstreet ./extractors/jobstreet",
+    );
+  });
+
   it("syncs the Naukri extractor in compose development mode", async () => {
     const composeFile = await readFile(
       resolve(process.cwd(), "../docker-compose.yml"),
@@ -133,5 +146,15 @@ describe("extractor deployment config", () => {
 
     expect(composeFile).toContain("path: ./extractors/techinasia");
     expect(composeFile).toContain("target: /app/extractors/techinasia");
+  });
+
+  it("syncs the JobStreet extractor in compose development mode", async () => {
+    const composeFile = await readFile(
+      resolve(process.cwd(), "../docker-compose.yml"),
+      { encoding: "utf8" },
+    );
+
+    expect(composeFile).toContain("path: ./extractors/jobstreet");
+    expect(composeFile).toContain("target: /app/extractors/jobstreet");
   });
 });

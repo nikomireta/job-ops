@@ -951,6 +951,7 @@ describe("OrchestratorPage", () => {
         kalibrrMaxJobsPerTerm: 150,
         deallsMaxJobsPerTerm: 150,
         techinasiaMaxJobsPerTerm: 150,
+        jobstreetMaxJobsPerTerm: 150,
         jobspyCountryIndeed: "united kingdom",
         searchCities: null,
         locationSearchScope: "selected_only",

@@ -206,6 +206,7 @@ export function usePipelineControls(
         kalibrrMaxJobsPerTerm: limits.kalibrrMaxJobsPerTerm,
         deallsMaxJobsPerTerm: limits.deallsMaxJobsPerTerm,
         techinasiaMaxJobsPerTerm: limits.techinasiaMaxJobsPerTerm,
+        jobstreetMaxJobsPerTerm: limits.jobstreetMaxJobsPerTerm,
         jobspyCountryIndeed: values.country,
         searchCities,
       });

@@ -157,6 +157,43 @@ describe("extractor health service", () => {
     );
   });
 
+  it("uses Indonesia and the JobStreet source limit for JobStreet health probes", async () => {
+    const run = vi.fn().mockResolvedValue({
+      success: true,
+      jobs: [
+        {
+          source: "jobstreet",
+          title: "Software Engineer",
+          employer: "Acme",
+          jobUrl: "https://id.jobstreet.com/job/91889473",
+        },
+      ],
+    });
+    const manifest: ExtractorManifest = {
+      id: "jobstreet",
+      displayName: "JobStreet",
+      providesSources: ["jobstreet"],
+      run,
+    };
+    mockGetExtractorRegistry.mockResolvedValue(createRegistry([manifest]));
+
+    const module = await import("./extractor-health");
+    const result = await module.checkExtractorHealth("jobstreet");
+
+    expect(result?.healthy).toBe(true);
+    expect(run).toHaveBeenCalledWith(
+      expect.objectContaining({
+        source: "jobstreet",
+        selectedSources: ["jobstreet"],
+        searchTerms: ["software"],
+        selectedCountry: "indonesia",
+        settings: expect.objectContaining({
+          jobstreetMaxJobsPerTerm: "1",
+        }),
+      }),
+    );
+  });
+
   it("expires cached results after one hour", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-03-31T10:00:00.000Z"));

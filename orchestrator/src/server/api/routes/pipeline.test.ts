@@ -147,6 +147,7 @@ describe.sequential("Pipeline API routes", () => {
           kalibrrMaxJobsPerTerm: 50,
           deallsMaxJobsPerTerm: 50,
           techinasiaMaxJobsPerTerm: 50,
+          jobstreetMaxJobsPerTerm: 50,
           jobspyResultsWanted: 20,
         },
         autoSkipScoreThreshold: 65,

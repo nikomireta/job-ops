@@ -209,6 +209,25 @@ describe("settingsRegistry helpers", () => {
       }
     });
 
+    it("uses env-backed defaults for jobstreet per-term caps", () => {
+      const previousJobStreetMaxJobsPerTerm =
+        process.env.JOBSTREET_MAX_JOBS_PER_TERM;
+
+      process.env.JOBSTREET_MAX_JOBS_PER_TERM = "65";
+
+      try {
+        expect(settingsRegistry.jobstreetMaxJobsPerTerm.default()).toBe(65);
+        expect(settingsRegistry.jobstreetMaxJobsPerTerm.parse("25")).toBe(25);
+      } finally {
+        if (previousJobStreetMaxJobsPerTerm === undefined) {
+          delete process.env.JOBSTREET_MAX_JOBS_PER_TERM;
+        } else {
+          process.env.JOBSTREET_MAX_JOBS_PER_TERM =
+            previousJobStreetMaxJobsPerTerm;
+        }
+      }
+    });
+
     it("clamps backupHour to 0-23", () => {
       expect(settingsRegistry.backupHour.parse("25")).toBe(23);
       expect(settingsRegistry.backupHour.parse("-1")).toBe(0);

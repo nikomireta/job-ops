@@ -65,4 +65,12 @@ describe("extractor source catalog", () => {
       category: "pipeline",
     });
   });
+
+  it("includes jobstreet as a pipeline source", () => {
+    expect(isExtractorSourceId("jobstreet")).toBe(true);
+    expect(EXTRACTOR_SOURCE_METADATA.jobstreet).toMatchObject({
+      label: "JobStreet",
+      category: "pipeline",
+    });
+  });
 });

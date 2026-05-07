@@ -116,6 +116,9 @@ const DEALLS_SUPPORTED_COUNTRIES = new Set(
 const TECHINASIA_SUPPORTED_COUNTRIES = new Set(
   ["indonesia"].map(normalizeCountryKey),
 );
+const JOBSTREET_SUPPORTED_COUNTRIES = new Set(
+  ["indonesia"].map(normalizeCountryKey),
+);
 const JOBINDEX_SUPPORTED_COUNTRIES = new Set(
   ["denmark"].map(normalizeCountryKey),
 );
@@ -218,6 +221,8 @@ export function isSourceAllowedForCountry(
     return DEALLS_SUPPORTED_COUNTRIES.has(normalizeCountryKey(country));
   if (source === "techinasia")
     return TECHINASIA_SUPPORTED_COUNTRIES.has(normalizeCountryKey(country));
+  if (source === "jobstreet")
+    return JOBSTREET_SUPPORTED_COUNTRIES.has(normalizeCountryKey(country));
   if (source === "jobindex")
     return JOBINDEX_SUPPORTED_COUNTRIES.has(normalizeCountryKey(country));
   if (source === "glassdoor") return isGlassdoorCountry(country);

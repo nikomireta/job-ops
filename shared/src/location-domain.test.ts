@@ -257,6 +257,13 @@ describe("location-domain", () => {
       supportedCountryKeys: ["indonesia"],
     });
     expect(
+      normalizeLocationSourceCapabilities({ source: "jobstreet" }),
+    ).toEqual({
+      requiresCityLocations: false,
+      source: "jobstreet",
+      supportedCountryKeys: ["indonesia"],
+    });
+    expect(
       normalizeLocationSourceCapabilities({ source: "startupjobs" }),
     ).toEqual({
       requiresCityLocations: false,

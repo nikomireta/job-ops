@@ -67,6 +67,8 @@ describe("location-support", () => {
     expect(isSourceAllowedForCountry("dealls", "india")).toBe(false);
     expect(isSourceAllowedForCountry("techinasia", "indonesia")).toBe(true);
     expect(isSourceAllowedForCountry("techinasia", "india")).toBe(false);
+    expect(isSourceAllowedForCountry("jobstreet", "indonesia")).toBe(true);
+    expect(isSourceAllowedForCountry("jobstreet", "india")).toBe(false);
     expect(isSourceAllowedForCountry("startupjobs", "united states")).toBe(
       true,
     );
@@ -88,6 +90,7 @@ describe("location-support", () => {
           "kalibrr",
           "dealls",
           "techinasia",
+          "jobstreet",
           "startupjobs",
           "linkedin",
         ],

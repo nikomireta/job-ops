@@ -93,6 +93,7 @@ function buildEffectiveConfigSnapshot(args: {
       kalibrrMaxJobsPerTerm: args.settings.kalibrrMaxJobsPerTerm.value,
       deallsMaxJobsPerTerm: args.settings.deallsMaxJobsPerTerm.value,
       techinasiaMaxJobsPerTerm: args.settings.techinasiaMaxJobsPerTerm.value,
+      jobstreetMaxJobsPerTerm: args.settings.jobstreetMaxJobsPerTerm.value,
       jobspyResultsWanted: args.settings.jobspyResultsWanted.value,
     },
     autoSkipScoreThreshold: args.settings.autoSkipScoreThreshold.value,
