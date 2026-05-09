@@ -25,3 +25,5 @@ tmp/
 
 # Virtual environment for Python
 .venv
+
+.playwright-mcp

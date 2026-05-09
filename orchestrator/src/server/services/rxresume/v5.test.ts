@@ -36,6 +36,21 @@ function jsonResponse(data: unknown, ok = true, status = 200) {
   };
 }
 
+function pdfResponse(bytes: Uint8Array, ok = true, status = 200) {
+  return {
+    ok,
+    status,
+    statusText: ok ? "OK" : "Error",
+    headers: {
+      get: (name: string) =>
+        name.toLowerCase() === "content-type" ? "application/pdf" : null,
+    },
+    arrayBuffer: async () =>
+      bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength),
+    text: async () => new TextDecoder().decode(bytes),
+  };
+}
+
 describe("rxresume v5 endpoints", () => {
   afterEach(() => {
     vi.unstubAllGlobals();
@@ -128,6 +143,54 @@ describe("rxresume v5 endpoints", () => {
 
     const body = JSON.parse(String(mockFetch.mock.calls[0][1].body));
     expect(body.data.metadata.template).toBe("meowth");
+  });
+
+  it("fills default metadata.css when upstream omits it", async () => {
+    const resumeWithoutCss = structuredClone(sampleResume) as Record<
+      string,
+      unknown
+    >;
+    delete (resumeWithoutCss.metadata as Record<string, unknown>).css;
+
+    const mockFetch = vi.fn().mockResolvedValue(
+      jsonResponse({
+        id: "resume-123",
+        name: "Resume",
+        slug: "resume",
+        data: resumeWithoutCss,
+      }),
+    );
+    vi.stubGlobal("fetch", mockFetch);
+
+    const result = await getResume("resume-123", {
+      baseUrl: "https://rxresu.me",
+      apiKey: "test-key",
+    });
+
+    expect(result.data).toMatchObject({
+      metadata: {
+        css: {
+          enabled: false,
+          value: "",
+        },
+      },
+    });
+  });
+
+  it("returns PDF bytes when upstream responds with application/pdf", async () => {
+    const bytes = new Uint8Array([
+      0x25, 0x50, 0x44, 0x46, 0x2d, 0x31, 0x2e, 0x37,
+    ]);
+    const mockFetch = vi.fn().mockResolvedValue(pdfResponse(bytes));
+    vi.stubGlobal("fetch", mockFetch);
+
+    const result = await exportResumePdf("resume-123", {
+      baseUrl: "https://rxresu.me",
+      apiKey: "test-key",
+    });
+
+    expect(result).toBeInstanceOf(Uint8Array);
+    expect(Array.from(result as Uint8Array)).toEqual(Array.from(bytes));
   });
 
   it("logs sanitized upstream validation details when a request fails", async () => {

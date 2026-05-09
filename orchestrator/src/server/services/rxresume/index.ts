@@ -510,7 +510,7 @@ export async function deleteResume(
 export async function exportResumePdf(
   resumeId: string,
   options: ResolveModeOptions = {},
-): Promise<string> {
+): Promise<string | Uint8Array> {
   try {
     const creds = await readV5Credentials(options.v5);
     return await v5.exportResumePdf(resumeId, {

@@ -102,6 +102,23 @@ async function downloadRxResumePdf(
   await writeFile(outputPath, bytes);
 }
 
+async function writeRxResumePdf(
+  pdf: string | Uint8Array,
+  outputPath: string,
+): Promise<void> {
+  if (typeof pdf === "string") {
+    if (!pdf.trim()) {
+      throw new Error(
+        "Reactive Resume did not return a PDF download URL. Please ensure your Reactive Resume API key and instance URL are configured correctly in Settings.",
+      );
+    }
+    await downloadRxResumePdf(pdf, outputPath);
+    return;
+  }
+
+  await writeFile(outputPath, pdf);
+}
+
 async function stripPictureWhenJobOpsIsNotHosted(args: {
   data: Record<string, unknown>;
   requestOrigin?: string | null;
@@ -162,13 +179,8 @@ async function renderRxResumePdf(args: {
       data: importData,
     });
 
-    const downloadUrl = await exportRxResumePdf(importedResumeId);
-    if (!downloadUrl || typeof downloadUrl !== "string") {
-      throw new Error(
-        "Reactive Resume did not return a PDF download URL. Please ensure your Reactive Resume API key and instance URL are configured correctly in Settings.",
-      );
-    }
-    await downloadRxResumePdf(downloadUrl, outputPath);
+    const exportedPdf = await exportRxResumePdf(importedResumeId);
+    await writeRxResumePdf(exportedPdf, outputPath);
   } finally {
     if (importedResumeId) {
       try {

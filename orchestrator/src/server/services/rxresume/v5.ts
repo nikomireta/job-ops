@@ -70,11 +70,11 @@ function extractErrorMessage(data: unknown, fallback: string): string {
   return fallback.slice(0, MAX_ERROR_SNIPPET);
 }
 
-async function executeWithKeyRetries(
+async function executeWithKeyRetriesResponse(
   url: string,
   options: RequestInit,
   apiKeyOverride?: string,
-): Promise<unknown> {
+): Promise<Response> {
   const rawApiKey = apiKeyOverride ?? getOriginalEnvValue("RXRESUME_API_KEY");
   if (!rawApiKey) {
     throw new Error("RXRESUME_API_KEY not configured in environment");
@@ -127,14 +127,27 @@ async function executeWithKeyRetries(
       );
     }
 
-    const contentType = response.headers.get("content-type");
-    if (contentType?.includes("application/json")) {
-      return response.json();
-    }
-    return response.text();
+    return response;
   }
 
   throw new Error("All Reactive Resume API keys failed.");
+}
+
+async function executeWithKeyRetries(
+  url: string,
+  options: RequestInit,
+  apiKeyOverride?: string,
+): Promise<unknown> {
+  const response = await executeWithKeyRetriesResponse(
+    url,
+    options,
+    apiKeyOverride,
+  );
+  const contentType = response.headers.get("content-type");
+  if (contentType?.includes("application/json")) {
+    return response.json();
+  }
+  return response.text();
 }
 
 function pathFromUrl(url: string): string {
@@ -251,13 +264,34 @@ export async function deleteResume(
 export async function exportResumePdf(
   id: string,
   config?: RxResumeApiConfig,
-): Promise<string> {
-  const result = (await fetchRxResume(
-    `/resumes/${id}/pdf`,
-    {},
-    config,
-  )) as RxResumeExportPdfResponse;
-  return result.url;
+): Promise<string | Uint8Array> {
+  const baseUrl =
+    config?.baseUrl ??
+    getOriginalEnvValue("RXRESUME_URL") ??
+    "https://rxresu.me";
+  const url = `${cleanBaseUrl(baseUrl)}/api/openapi/resumes/${id}/pdf`;
+  const response = await executeWithKeyRetriesResponse(url, {}, config?.apiKey);
+  const contentType = response.headers.get("content-type")?.toLowerCase() ?? "";
+
+  if (contentType.includes("application/pdf")) {
+    return new Uint8Array(await response.arrayBuffer());
+  }
+
+  if (contentType.includes("application/json")) {
+    const result = (await response.json()) as
+      | RxResumeExportPdfResponse
+      | string;
+    return typeof result === "string" ? result : result.url;
+  }
+
+  const bytes = new Uint8Array(await response.arrayBuffer());
+  const signature = new TextDecoder().decode(bytes.slice(0, 4));
+  if (signature === "%PDF") {
+    return bytes;
+  }
+
+  const text = new TextDecoder().decode(bytes).trim();
+  return text;
 }
 
 /**
