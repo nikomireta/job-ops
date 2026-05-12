@@ -210,7 +210,5 @@ async function buildTailoringPrompt(
 }
 
 function sanitizeText(text: string): string {
-  return text
-    .replace(/\*\*[\s\S]*?\*\*/g, "") // remove markdown bold
-    .trim();
+  return text.replace(/\*\*([\s\S]*?)\*\*/g, "$1").trim();
 }

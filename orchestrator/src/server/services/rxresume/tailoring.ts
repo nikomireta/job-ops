@@ -49,6 +49,32 @@ function parseTailoredSkills(
   ) as RecordLike[];
 }
 
+function isHtmlContent(value: unknown): boolean {
+  return typeof value === "string" && /<\/?[a-z][\s\S]*>/i.test(value);
+}
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function normalizeTailoredSummary(summary: string): string {
+  return summary.replace(/\s+/g, " ").trim();
+}
+
+function formatTailoredSummary(
+  summary: string,
+  existingContent: unknown,
+): string {
+  const normalized = normalizeTailoredSummary(summary);
+  if (!isHtmlContent(existingContent)) return normalized;
+  return `<p>${escapeHtml(normalized)}</p>`;
+}
+
 export function applyTailoredHeadline(
   resumeData: RecordLike,
   headline?: string | null,
@@ -72,14 +98,14 @@ export function applyTailoredSummary(
       typeof topSummary.content === "string" ||
       topSummary.content === undefined
     ) {
-      topSummary.content = summary;
+      topSummary.content = formatTailoredSummary(summary, topSummary.content);
       return;
     }
     if (
       typeof topSummary.value === "string" ||
       topSummary.value === undefined
     ) {
-      topSummary.value = summary;
+      topSummary.value = formatTailoredSummary(summary, topSummary.value);
       return;
     }
   }
@@ -87,7 +113,10 @@ export function applyTailoredSummary(
   const sections = asRecord(resumeData.sections);
   const summarySection = asRecord(sections?.summary);
   if (summarySection) {
-    summarySection.content = summary;
+    summarySection.content = formatTailoredSummary(
+      summary,
+      summarySection.content,
+    );
     return;
   }
 }
